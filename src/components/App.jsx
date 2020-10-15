@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Hero from './Hero/Hero';
+import Coaching from './Coaching/Coaching';
+import Philosophy from './Philosophy/Philosophy';
+import Testimonials from './Testimonials/Testimonials';
+import Considering from './Considering/Considering';
 import About from './About/About';
-import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
@@ -11,6 +14,7 @@ import { heroData, aboutData, projectsData, contactData, footerData } from '../m
 
 function App() {
   const [hero, setHero] = useState({});
+  const [coaching, setCoaching] = useState({});
   const [about, setAbout] = useState({});
   const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
@@ -18,6 +22,7 @@ function App() {
 
   useEffect(() => {
     setHero({ ...heroData });
+    setCoaching({ ...aboutData });
     setAbout({ ...aboutData });
     setProjects([...projectsData]);
     setContact({ ...contactData });
@@ -25,10 +30,13 @@ function App() {
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+    <PortfolioProvider value={{ hero, coaching, about, projects, contact, footer }}>
       <Hero />
+      <Coaching />
+      <Philosophy />
+      <Testimonials />
+      <Considering />
       <About />
-      <Projects />
       <Contact />
       <Footer />
     </PortfolioProvider>
