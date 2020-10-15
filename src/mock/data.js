@@ -15,9 +15,19 @@ export const heroData = {
   cta: '',
 };
 
+// COACHING DATA
+export const coachingData = {
+  img: 'mountain-climbers.jpeg',
+};
+
+// PHILOSOPHY DATA
+export const philosophyData = {
+  img: 'mountain-climbers.jpeg',
+};
+
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'profile.png',
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',

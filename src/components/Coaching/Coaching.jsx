@@ -6,8 +6,8 @@ import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
 const Philosopy = () => {
-  const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { coaching } = useContext(PortfolioContext);
+  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = coaching;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -27,13 +27,6 @@ const Philosopy = () => {
       <Container>
         <Title title="Coaching for Change" />
         <Row className="about-wrapper">
-          <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
-              </div>
-            </Fade>
-          </Col>
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
@@ -55,21 +48,17 @@ const Philosopy = () => {
                 <p className="about-wrapper__info-text">
                   This is where coaching comes in. The coach is a sparring partner and co-traveller of your journey of change.
                 </p>
-                {/* {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )} */}
               </div>
             </Fade>
           </Col>
+          <Col md={6} sm={12}>
+            <Fade bottom duration={1000} delay={600} distance="30px">
+              <div className="about-wrapper__image">
+                <AboutImg alt="profile picture" filename={img} />
+              </div>
+            </Fade>
+          </Col>
+
         </Row>
       </Container>
     </section>

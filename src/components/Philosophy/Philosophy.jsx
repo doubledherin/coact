@@ -5,9 +5,9 @@ import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
-const Coaching = () => {
-  const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+const Philosophy = () => {
+  const { philosophy } = useContext(PortfolioContext);
+  const { img } = philosophy;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -52,18 +52,6 @@ const Coaching = () => {
                 <p className="about-wrapper__info-text">
                   You are most likely experiencing self-awareness, connection to your inner knowing, power of choice and appreciation. You will also be able to see through what is happening, aligning your life values and triggering pattern interruptions. This will create room for your resilience and authenticity to show up. 
                 </p>
-                {/* {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )} */}
               </div>
             </Fade>
           </Col>
@@ -73,4 +61,4 @@ const Coaching = () => {
   );
 };
 
-export default Coaching;
+export default Philosophy;

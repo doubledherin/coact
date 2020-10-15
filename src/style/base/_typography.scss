@@ -4,6 +4,10 @@ h1 {
   font-weight: 700;
 }
 
+h3 {
+  font-weight: 600;
+}
+
 p,
 a {
   font-family: 'Montserrat', sans-serif;
@@ -26,8 +30,6 @@ a:hover {
   margin: 0px;
   margin-bottom: 4.5rem;
   font-size: $big-font-size;
-  font-weight: bold;
-  text-transform: uppercase;
 
   @include respond(phone) {
     font-size: 2.8rem;

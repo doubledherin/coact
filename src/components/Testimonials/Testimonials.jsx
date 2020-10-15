@@ -27,7 +27,7 @@ const Testimonials = () => {
         <div className="project-wrapper">
           <Title title="Testimonials" />
               <Row key={1}>
-                <Col lg={4} sm={12}>
+                <Col lg={14} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -46,7 +46,7 @@ const Testimonials = () => {
                 </Col>
               </Row>
               <Row key={2}>
-                <Col lg={4} sm={12}>
+                <Col lg={14} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
@@ -65,7 +65,7 @@ const Testimonials = () => {
                 </Col>
               </Row>
               <Row key={3}>
-                <Col lg={4} sm={12}>
+                <Col lg={14} sm={12}>
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
