@@ -1,6 +1,6 @@
 .footer {
-  background-color: $dark-grey;
-  color: $white-color;
+  background-color: $white-color;
+  color: $black-color;
   padding: 4.8rem 0;
 
   @include respond(phone) {
@@ -8,15 +8,15 @@
   }
 
   &__text {
-    color: darken(white, 50%);
+    color: darken($black-color, 50%);
     font-size: 1.3rem;
 
     a {
-      color: darken(white, 50%);
+      color: darken($black-color, 50%);
       font-size: 1.3rem;
       transition: all 0.4s;
       display: inline-block;
-      background-color: $dark-grey;
+      background-color: $white-color;
 
       &:hover,
       &:active {
@@ -36,30 +36,8 @@
   }
 }
 
-.social-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-
-  a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: $white-color;
-    font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
-    margin: $default-font-size $default-font-size;
-    transition: all 0.2s ease-in;
-
-    &:hover {
-      transform: translateY(-2px);
-    }
-  }
-}
-
 .back-to-top i {
-  color: $white-color;
+  color: $black-color;
   margin: 1rem 0 $default-font-size;
   transition: all 0.2s ease-in;
   cursor: pointer;
