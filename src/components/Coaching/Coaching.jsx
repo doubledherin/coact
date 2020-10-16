@@ -28,6 +28,13 @@ const Coaching = () => {
         <Title title="Coaching for Change" />
         <Row className="coaching-wrapper">
           <Col md={6} sm={12}>
+            <Fade bottom duration={1000} delay={600} distance="30px">
+              <div className="coaching-wrapper__image">
+                <CoachingImg alt="mountain climber on mountainside" filename={img} />
+              </div>
+            </Fade>
+          </Col>
+          <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="coaching-wrapper__info">
                 <p className="coaching-wrapper__info-text">
@@ -51,14 +58,6 @@ const Coaching = () => {
               </div>
             </Fade>
           </Col>
-          <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="coaching-wrapper__image">
-                <CoachingImg alt="profile picture" filename={img} />
-              </div>
-            </Fade>
-          </Col>
-
         </Row>
       </Container>
     </section>

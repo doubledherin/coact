@@ -22,24 +22,31 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="jumbotron">
-      <Container>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="hero-title">
-            co.act
-          </h1>
-        </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          <p className="hero-cta">
-            <span className="cta-btn cta-btn--hero">
-              <Link to="coaching" smooth duration={1000}>
-                Learn More
-              </Link>
-            </span>
-          </p>
-        </Fade>
-      </Container>
-    </section>
+    <div>
+      <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+        <h1 className="hero-title">
+          co.act
+        </h1>
+      </Fade>
+      <section id="hero" className="jumbotron">
+        <Container>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+            <h2 className="hero-subtitle">
+              Let's go beyond
+            </h2>
+          </Fade>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <p className="hero-cta">
+              <span className="cta-btn cta-btn--hero">
+                <Link to="coaching" smooth duration={1000}>
+                  Are you a passenger or a pilot?
+                </Link>
+              </span>
+            </p>
+          </Fade>
+        </Container>
+      </section>
+    </div>
   );
 };
 

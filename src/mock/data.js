@@ -17,17 +17,17 @@ export const heroData = {
 
 // COACHING DATA
 export const coachingData = {
-  img: 'mountain-climbers.jpeg',
+  img: 'PilotOrPassenger.png',
 };
 
 // PHILOSOPHY DATA
 export const philosophyData = {
-  img: 'mountain-climbers.jpeg',
+  img: 'MountainToClimb.jpeg',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.png',
+  img: 'profile-drawing.png',
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
