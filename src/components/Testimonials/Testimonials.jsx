@@ -4,7 +4,6 @@ import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
 
 const Testimonials = () => {
 
@@ -22,9 +21,9 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section id="projects">
+    <section id="testimonials">
       <Container>
-        <div className="project-wrapper">
+        <div className="testimonials-wrapper">
           <Title title="Testimonials" />
               <Row key={1}>
                 <Col lg={14} sm={12}>
@@ -35,7 +34,7 @@ const Testimonials = () => {
                     delay={500}
                     distance="30px"
                   >
-                    <div className="project-wrapper__text">
+                    <div className="testimonials-wrapper__text">
                       <div>
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.
@@ -54,7 +53,7 @@ const Testimonials = () => {
                     delay={500}
                     distance="30px"
                   >
-                    <div className="project-wrapper__text">
+                    <div className="testimonials-wrapper__text">
                       <div>
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.
@@ -73,7 +72,7 @@ const Testimonials = () => {
                     delay={500}
                     distance="30px"
                   >
-                    <div className="project-wrapper__text">
+                    <div className="testimonials-wrapper__text">
                       <div>
                         <p>
                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.
