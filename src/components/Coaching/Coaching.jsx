@@ -8,7 +8,6 @@ import PortfolioContext from '../../context/context';
 const Coaching = () => {
   const { coaching } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = coaching;
-  console.log("IMG", img)
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -50,7 +49,7 @@ const Coaching = () => {
                 </p>
                 <h3>How to go through and get there?</h3>
                 <p className="coaching-wrapper__info-text">
-                  When change at some point is necessary, which one are you? Feeling stuck is a wake up call for redirection. There is no shortcut for getting a clarity what really matters and going for it. What holds you back to go through?
+                  It begins by creating room and time. Shifting a perspective does not come naturally without stirring it up. What you resist, persists. What could help is someone to mirror you, to raise questions that you did not ask yourself yet, and to be there when courage and support is needed.
                 </p>
                 <p className="coaching-wrapper__info-text">
                   This is where coaching comes in. The coach is a sparring partner and co-traveller of your journey of change.

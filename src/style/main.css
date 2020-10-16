@@ -12,7 +12,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
-@import url(/Users/wendydherin/Projects/gatsby-simplefolio/src/style/vendor/css/font-awesome.min.css);
+@import url(/Users/wendydherin/Projects/coact/src/style/vendor/css/font-awesome.min.css);
 .mb-8 {
   margin-bottom: 8rem !important;
 }
@@ -74,7 +74,7 @@ a:hover {
 }
 
 .text-color-main {
-  background-image: linear-gradient(135deg, #1c99c7 0%, #00cdac 100%);
+  background-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -82,7 +82,7 @@ a:hover {
 @media (max-width: 37.5em) {
   .text-color-main {
     background-image: none;
-    -webkit-text-fill-color: #00cdac;
+    -webkit-text-fill-color: #b6d3ad;
   }
 }
 
@@ -118,13 +118,13 @@ a:hover {
 
 /* Hero Style */
 .cta-btn--hero {
-  background-image: linear-gradient(135deg, #1c99c7 0%, #00cdac 100%);
+  background-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   border-width: 2px;
   border-style: solid;
-  -o-border-image: linear-gradient(135deg, #1c99c7 0%, #00cdac 100%);
-     border-image: linear-gradient(135deg, #1c99c7 0%, #00cdac 100%);
+  -o-border-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
+     border-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
   border-image-slice: 1;
   cursor: pointer;
 }
@@ -132,13 +132,13 @@ a:hover {
 @media (max-width: 37.5em) {
   .cta-btn--hero {
     background-image: none;
-    border: 2px solid #00cdac;
-    -webkit-text-fill-color: #00cdac;
+    border: 2px solid #b6d3ad;
+    -webkit-text-fill-color: #b6d3ad;
   }
 }
 
 .cta-btn--hero::after {
-  background-image: linear-gradient(135deg, #1c99c7 0%, #00cdac 100%);
+  background-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
 }
 
 @media (max-width: 37.5em) {
@@ -154,7 +154,7 @@ a:hover {
 
 @media (max-width: 37.5em) {
   .cta-btn--hero:hover {
-    -webkit-text-fill-color: #00cdac;
+    -webkit-text-fill-color: #b6d3ad;
   }
 }
 
@@ -173,7 +173,7 @@ a:hover {
 }
 
 .cta-btn--resume:hover {
-  color: #00cdac;
+  color: #b6d3ad;
   text-decoration: none;
 }
 
@@ -213,7 +213,7 @@ a:hover {
 }
 
 .footer__text a:hover, .footer__text a:active {
-  color: #1c99c7;
+  color: #aecaa5;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
@@ -290,8 +290,8 @@ section {
 }
 
 #about {
-  background-color: #1c99c7;
-  background-image: linear-gradient(135deg, #1c99c7 0%, #00cdac 100%);
+  background-color: #aecaa5;
+  background-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
   color: #fff;
   height: 100%;
   border-top: 0px;
@@ -380,7 +380,7 @@ section {
 }
 
 #about .about-wrapper__info-text--important {
-  background: #00c8a8;
+  background: #b3d1aa;
   display: inline-block;
   font-style: italic;
   padding: 0 0.3rem;
@@ -399,8 +399,8 @@ section {
 }
 
 #coaching {
-  background-color: #1c99c7;
-  background-image: linear-gradient(135deg, #1c99c7 0%, #00cdac 100%);
+  background-color: #aecaa5;
+  background-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
   color: #fff;
   height: 100%;
   border-top: 0px;
@@ -489,7 +489,7 @@ section {
 }
 
 #coaching .coaching-wrapper__info-text--important {
-  background: #00c8a8;
+  background: #b3d1aa;
   display: inline-block;
   font-style: italic;
   padding: 0 0.3rem;
@@ -508,8 +508,8 @@ section {
 }
 
 #testimonials {
-  background-color: #1c99c7;
-  background-image: linear-gradient(135deg, #1c99c7 0%, #00cdac 100%);
+  background-color: #aecaa5;
+  background-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
   color: #fff;
   height: 100%;
   border-top: 0px;
@@ -598,7 +598,7 @@ section {
 }
 
 #testimonials .testimonials-wrapper__info-text--important {
-  background: #00c8a8;
+  background: #b3d1aa;
   display: inline-block;
   font-style: italic;
   padding: 0 0.3rem;
@@ -617,7 +617,7 @@ section {
 }
 
 #contact {
-  background-image: linear-gradient(135deg, #1c99c7 0%, #00cdac 100%);
+  background-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   padding: 15rem 0 10rem 0;
@@ -656,6 +656,20 @@ section {
   #contact .contact-wrapper a {
     font-size: 2rem;
   }
+}
+
+#landing .hero-title {
+  font-size: 5rem;
+  padding: 1rem 5.6rem;
+}
+
+#landing .hero-subtitle {
+  font-size: 4rem;
+  text-align: center;
+}
+
+#landing .jumbotron {
+  background-color: #fff;
 }
 
 #hero {
@@ -842,7 +856,7 @@ section {
 }
 
 #projects .project-wrapper__text p > a {
-  color: #00cdac;
+  color: #b6d3ad;
 }
 
 #projects .project-wrapper__image {

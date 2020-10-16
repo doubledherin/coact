@@ -13,6 +13,7 @@ export const heroData = {
   name: '',
   subtitle: '',
   cta: '',
+  img: 'Expedition.png',
 };
 
 // COACHING DATA
