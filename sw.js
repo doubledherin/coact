@@ -27,17 +27,17 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-b84f9f8c365204b8db11.js"
+    "url": "webpack-runtime-f3e3dfcdd3acc0097f52.js"
   },
   {
     "url": "framework-dac95de3c301f57a114a.js"
   },
   {
-    "url": "app-d9c59a6c626998a32d55.js"
+    "url": "app-3f75032ff4ec98833e04.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "4270dc57cc9410a4e4f196d981311dd7"
+    "revision": "3fe056e55b0a417c2bb5f9a774fb4105"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b0556ce5127c1a3e2490.js"
@@ -48,14 +48,14 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "f3d26aabdf77c98676b6be22c0de610c"
+    "revision": "8dbfbd3f28a3e6103b18e48f4273485d"
   },
   {
     "url": "polyfill-4b1e8b7e04c413f9811f.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "6dcdaa4ee0824c2a1794c38be2857b69"
+    "revision": "a4aff537d11c11b5a663de6094eeda6b"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -142,12 +142,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/coact-staging`), ``)
+  pathname = pathname.replace(new RegExp(`^/coact`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/coact-staging/app-d9c59a6c626998a32d55.js`))) {
+  if (!resources || !(await caches.match(`/coact/app-3f75032ff4ec98833e04.js`))) {
     return await fetch(event.request)
   }
 
@@ -160,7 +160,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/coact-staging/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/coact/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
