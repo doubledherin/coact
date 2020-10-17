@@ -671,15 +671,95 @@ section {
   height: 40vh;
 }
 
-#landing .hero-subtitle {
-  font-size: 4rem;
-  text-align: center;
+@media (max-width: 75em) {
+  #landing .hero-title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  #landing .hero-title {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 37.5em) {
+  #landing .hero-title {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 20em) {
+  #landing .hero-title {
+    font-size: 2.8rem;
+  }
 }
 
 #landing .jumbotron {
   background-color: #fff;
   max-width: 100%;
   padding: 0;
+}
+
+#landing .hero-subtitle {
+  font-size: 4rem;
+  text-align: center;
+}
+
+@media (max-width: 75em) {
+  #landing .hero-subtitle {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  #landing .hero-subtitle {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 37.5em) {
+  #landing .hero-subtitle {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 20em) {
+  #landing .hero-subtitle {
+    font-size: 2.8rem;
+  }
+}
+
+#landing .hero-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+@media (max-width: 56.25em) {
+  #landing .hero-cta {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+#landing .hero-cta a {
+  font-size: 2.4rem;
+}
+
+@media (max-width: 37.5em) {
+  #landing .hero-cta a {
+    font-size: 2rem;
+  }
 }
 
 #hero {
@@ -707,100 +787,6 @@ section {
 @media (max-width: 37.5em) {
   #hero {
     padding: 0rem 1.6rem;
-  }
-}
-
-#hero .hero-title {
-  font-size: 5.6rem;
-  font-weight: 700;
-  margin-bottom: 3.2rem;
-  text-align: left;
-}
-
-@media (max-width: 75em) {
-  #hero .hero-title {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 56.25em) {
-  #hero .hero-title {
-    font-size: 3.6rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 37.5em) {
-  #hero .hero-title {
-    font-size: 3.5rem;
-    line-height: 1.5;
-  }
-}
-
-@media (max-width: 20em) {
-  #hero .hero-title {
-    font-size: 2.8rem;
-  }
-}
-
-#hero .hero-subtitle {
-  font-size: 4.6rem;
-  font-weight: 500;
-  margin-bottom: 3.2rem;
-  text-align: left;
-}
-
-@media (max-width: 75em) {
-  #hero .hero-subtitle {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 56.25em) {
-  #hero .hero-subtitle {
-    font-size: 3.6rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 37.5em) {
-  #hero .hero-subtitle {
-    font-size: 3.5rem;
-    line-height: 1.5;
-  }
-}
-
-@media (max-width: 20em) {
-  #hero .hero-subtitle {
-    font-size: 2.8rem;
-  }
-}
-
-#hero .hero-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-@media (max-width: 56.25em) {
-  #hero .hero-cta {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-}
-
-#hero .hero-cta a {
-  font-size: 2.4rem;
-}
-
-@media (max-width: 37.5em) {
-  #hero .hero-cta a {
-    font-size: 2rem;
   }
 }
 
