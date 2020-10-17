@@ -11,7 +11,7 @@
 ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 */
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 @import url(/Users/wendydherin/Projects/coact/src/style/vendor/css/font-awesome.min.css);
 .mb-8 {
   margin-bottom: 8rem !important;
@@ -88,7 +88,7 @@ a:hover {
 
 .text-color-main:hover {
   -webkit-transform: translateX(2px);
-          transform: translateX(2px);
+  transform: translateX(2px);
 }
 
 /* Call to Action Button */
@@ -124,7 +124,7 @@ a:hover {
   border-width: 2px;
   border-style: solid;
   -o-border-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
-     border-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
+  border-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
   border-image-slice: 1;
   cursor: pointer;
 }
@@ -212,7 +212,8 @@ a:hover {
   background-color: #333333;
 }
 
-.footer__text a:hover, .footer__text a:active {
+.footer__text a:hover,
+.footer__text a:active {
   color: #aecaa5;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -232,11 +233,11 @@ a:hover {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .social-links a {
@@ -245,11 +246,11 @@ a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   color: #fff;
   font-size: 3rem;
   width: 5rem;
@@ -261,7 +262,7 @@ a:hover {
 
 .social-links a:hover {
   -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .back-to-top i {
@@ -274,7 +275,7 @@ a:hover {
 
 .back-to-top i:hover {
   -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 section {
@@ -320,11 +321,11 @@ section {
   display: flex;
   height: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (max-width: 56.25em) {
@@ -345,19 +346,19 @@ section {
   display: flex;
   height: 100%;
   -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media (max-width: 37.5em) {
   #about .about-wrapper__info {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -429,11 +430,11 @@ section {
   display: flex;
   height: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (max-width: 56.25em) {
@@ -454,19 +455,19 @@ section {
   display: flex;
   height: 100%;
   -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media (max-width: 37.5em) {
   #coaching .coaching-wrapper__info {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -538,11 +539,11 @@ section {
   display: flex;
   height: 100%;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media (max-width: 56.25em) {
@@ -563,19 +564,19 @@ section {
   display: flex;
   height: 100%;
   -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -ms-flex-pack: left;
+  justify-content: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @media (max-width: 37.5em) {
   #testimonials .testimonials-wrapper__info {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
 
@@ -639,7 +640,7 @@ section {
   margin-top: 3.2rem;
   padding: 0 2rem;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 #contact .contact-wrapper__text {
@@ -658,9 +659,16 @@ section {
   }
 }
 
+#landing {
+  min-height: 100vh;
+  height: 100vh;
+}
+
 #landing .hero-title {
   font-size: 5rem;
   padding: 1rem 5.6rem;
+  min-height: 50vh;
+  height: 50vh;
 }
 
 #landing .hero-subtitle {
@@ -673,14 +681,12 @@ section {
 }
 
 #hero {
-  min-height: 100vh;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   border-bottom: 0px;
   background: #fff;
   font-weight: 400;
@@ -773,13 +779,17 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 8%;
 }
 
 @media (max-width: 56.25em) {
   #hero .hero-cta {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -874,19 +884,20 @@ section {
 #projects .project-wrapper__image .thumbnail {
   border: none;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-  transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow, 0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow,
+    0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
 }
 
 @media (max-width: 37.5em) {
   #projects .project-wrapper__image .thumbnail {
     border: 1px solid #d2d2d2;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     margin-bottom: 3.2rem;
   }
 }
