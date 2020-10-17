@@ -26,7 +26,7 @@ const Hero = () => {
       <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
         <h1 className="hero-title">{title}</h1>
       </Fade>
-      <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+      <Fade right={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
         <h2 className="hero-subtitle">{subtitle}</h2>
       </Fade>
       <section id="hero">
@@ -36,7 +36,7 @@ const Hero = () => {
               <HeroImg alt="mountain climber on mountainside" filename={img} />
             </div>
           </Fade>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={2000} distance="30px">
+          <Fade bottom duration={1000} delay={2000} distance="30px">
             <p className="hero-cta">
               <span className="cta-btn cta-btn--hero">
                 <Link to="coaching" smooth duration={1000}>
