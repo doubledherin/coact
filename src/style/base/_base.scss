@@ -1,8 +1,12 @@
 html {
   font-size: 62.5%;
+  margin: 0;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: left;
+  margin: 0;
 }
+
+*, *:before, *:after { margin: 0; padding: 0; box-sizing: border-box; }

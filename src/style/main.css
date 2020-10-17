@@ -23,11 +23,22 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 html {
   font-size: 62.5%;
+  margin: 0;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
   text-align: left;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -723,7 +734,7 @@ section {
 
 @media (max-width: 37.5em) {
   #landing .hero-subtitle {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     line-height: 1.5;
   }
 }
@@ -752,13 +763,19 @@ section {
   }
 }
 
+@media (max-width: 37.5em) {
+  #landing .hero-cta {
+    margin-top: 15%;
+  }
+}
+
 #landing .hero-cta a {
   font-size: 2.4rem;
 }
 
 @media (max-width: 37.5em) {
   #landing .hero-cta a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -786,7 +803,7 @@ section {
 
 @media (max-width: 37.5em) {
   #hero {
-    padding: 0rem 1.6rem;
+    padding: 0;
   }
 }
 
