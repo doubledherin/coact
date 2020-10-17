@@ -13,8 +13,8 @@ const CoachingImg = ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                fixed(width: 1000) {
-                  ...GatsbyImageSharpFixed
+                fluid(maxWidth: 1366) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -27,8 +27,8 @@ const CoachingImg = ({ filename, alt }) => (
 
       if (!image) return null;
 
-      const imageFixed = image.node.childImageSharp.fixed;
-      return <Img className="rounded" alt={alt} fixed={imageFixed} />;
+      const imageFluid = image.node.childImageSharp.fluid;
+      return <Img alt={alt} fluid={imageFluid} />;
     }}
   />
 );

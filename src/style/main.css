@@ -667,8 +667,8 @@ section {
 #landing .hero-title {
   font-size: 5rem;
   padding: 1rem 5.6rem;
-  min-height: 50vh;
-  height: 50vh;
+  min-height: 40vh;
+  height: 40vh;
 }
 
 #landing .hero-subtitle {
@@ -678,6 +678,8 @@ section {
 
 #landing .jumbotron {
   background-color: #fff;
+  max-width: 100%;
+  padding: 0;
 }
 
 #hero {
@@ -691,7 +693,6 @@ section {
   background: #fff;
   font-weight: 400;
   color: #272341;
-  padding: 0rem 5.6rem;
   margin-bottom: 0;
   top: 0;
   left: 0;
@@ -782,7 +783,7 @@ section {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-top: 8%;
+  margin-top: 5%;
 }
 
 @media (max-width: 56.25em) {
