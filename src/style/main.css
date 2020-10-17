@@ -238,44 +238,6 @@ a:hover {
   border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.social-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.social-links a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 3rem;
-  width: 5rem;
-  height: 5rem;
-  margin: 1.6rem 1.6rem;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-.social-links a:hover {
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-}
-
 .back-to-top i {
   color: #000;
   margin: 1rem 0 1.6rem;
