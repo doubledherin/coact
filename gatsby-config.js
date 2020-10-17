@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/coact',
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
