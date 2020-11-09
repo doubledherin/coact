@@ -1,6 +1,6 @@
 .footer {
-  background-color: $white-color;
-  color: $black-color;
+  background-color: white;
+  color: black;
   padding: 4.8rem 0;
 
   @include respond(phone) {
@@ -8,15 +8,15 @@
   }
 
   &__text {
-    color: darken($black-color, 50%);
+    color: darken(black, 50%);
     font-size: 1.3rem;
 
     a {
-      color: darken($black-color, 50%);
+      color: darken(black, 50%);
       font-size: 1.3rem;
       transition: all 0.4s;
       display: inline-block;
-      background-color: $white-color;
+      background-color: white;
 
       &:hover,
       &:active {
@@ -37,7 +37,7 @@
 }
 
 .back-to-top i {
-  color: $black-color;
+  color: black;
   margin: 1rem 0 $default-font-size;
   transition: all 0.2s ease-in;
   cursor: pointer;
