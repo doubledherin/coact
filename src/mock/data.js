@@ -10,9 +10,10 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: 'co.act',
-  subtitle: 'Let\u2019s go beyond',
+  subtitle: 'LET\u2019S GO BEYOND',
   cta: 'Are you a passenger or a pilot?',
-  img: 'Expedition.png',
+  imgMountains: 'Mountain.png',
+  imgHikers: 'Hikers.png',
 };
 
 // COACHING DATA
