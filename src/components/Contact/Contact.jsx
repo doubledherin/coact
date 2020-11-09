@@ -23,7 +23,7 @@ const Contact = () => {
               className="cta-btn cta-btn--resume"
               href={email ? `mailto:${email}` : 'https://github.com/cobidev/react-simplefolio'}
             >
-              {btn || "Let's Talk"}
+              {btn || 'Let\u2019s Talk'}
             </a>
           </div>
         </Fade>

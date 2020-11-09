@@ -1,4 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+html, body {
+  font-family: 'Inter', sans-serif;
+}
+
+.logo {
+  font-family: 'Sen', sans-serif;
+}
 
 h1 {
   font-weight: 700;
@@ -11,7 +20,6 @@ h3 {
 
 p,
 a {
-  font-family: 'Montserrat', sans-serif;
   font-size: $default-font-size;
 }
 
