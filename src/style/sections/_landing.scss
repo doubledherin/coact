@@ -15,14 +15,13 @@
         margin-bottom: 0;
     
         @include respond(tab-land) {
-          font-size: 4rem;
+          font-size: 3rem;
         }
         @include respond(tab-port) {
-          font-size: 3.6rem;
+          font-size: 4rem;
           text-align: center;
         }
         @include respond(phone) {
-          font-size: 3.5rem;
           line-height: 1.5;
         }
         @include respond(phone-xs) {
@@ -31,11 +30,20 @@
       }
       .tagline {
         font-weight: 700;
+        @include respond(tab-land) {
+          font-size: 1.3rem;
+        }
+          @include respond(tab-port) {
+          text-align: center;
+        }
       }
     }
     .nav-item {
       font-weight: 700;
       padding-left: 300px;
+      @include respond(tab-land) {
+        padding-left: 100px;
+      }
     }
   }
 
@@ -85,6 +93,14 @@
       background-color: $coact-green;
       float: right;
       border-radius: 15px 0 0 0;
+      @include respond(tab-port) {
+        width: 100vw;
+        height: 40vh;
+      }  
+      @include respond(phone) {
+        width: 100vw;
+        height: 50vh;
+      }  
     }
     .cta-text {
       margin-left: 15%;
@@ -92,6 +108,10 @@
       h1 {
         font-size: 3.2rem;
         font-weight: 500;  
+      }
+      @include respond(tab-port) {
+        text-align: center;
+        margin-left: 0;
       }
     }
   }

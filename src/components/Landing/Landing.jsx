@@ -24,7 +24,7 @@ const Landing = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth > 769) {
+    if (window.innerWidth > 900) {
       setIsDesktop(true);
       setIsMobile(false);
     } else {

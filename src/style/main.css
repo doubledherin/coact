@@ -325,20 +325,19 @@ section {
 
 @media (max-width: 75em) {
   #landing #header .logo .company-name {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 56.25em) {
   #landing #header .logo .company-name {
-    font-size: 3.6rem;
+    font-size: 4rem;
     text-align: center;
   }
 }
 
 @media (max-width: 37.5em) {
   #landing #header .logo .company-name {
-    font-size: 3.5rem;
     line-height: 1.5;
   }
 }
@@ -353,9 +352,27 @@ section {
   font-weight: 700;
 }
 
+@media (max-width: 75em) {
+  #landing #header .logo .tagline {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  #landing #header .logo .tagline {
+    text-align: center;
+  }
+}
+
 #landing #header .nav-item {
   font-weight: 700;
   padding-left: 300px;
+}
+
+@media (max-width: 75em) {
+  #landing #header .nav-item {
+    padding-left: 100px;
+  }
 }
 
 #landing #images .hikers__image {
@@ -419,6 +436,20 @@ section {
   border-radius: 15px 0 0 0;
 }
 
+@media (max-width: 56.25em) {
+  #landing #cta .corner-card {
+    width: 100vw;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 37.5em) {
+  #landing #cta .corner-card {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
 #landing #cta .cta-text {
   margin-left: 15%;
   margin-top: 5%;
@@ -427,6 +458,13 @@ section {
 #landing #cta .cta-text h1 {
   font-size: 3.2rem;
   font-weight: 500;
+}
+
+@media (max-width: 56.25em) {
+  #landing #cta .cta-text {
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 #about {
