@@ -449,7 +449,7 @@ section {
 @media (max-width: 37.5em) {
   #landing #cta .corner-card {
     width: 100vw;
-    height: 50vh;
+    height: 20vh;
   }
 }
 
