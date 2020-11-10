@@ -11,7 +11,7 @@ export const headData = {
 export const heroData = {
   title: 'co.act',
   subtitle: 'LET\u2019S GO BEYOND',
-  cta: 'Are you a passenger or a pilot?',
+  cta: 'ARE YOU A PASSENGER OR A PILOT?',
   imgMountains: 'Mountain.png',
   imgHikers: 'Hikers.png',
 };

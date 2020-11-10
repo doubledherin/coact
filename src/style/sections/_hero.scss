@@ -4,9 +4,9 @@
   height: 100vh;
   .hero-title {
     font-size: 6.6rem;
-    padding: 1rem 5.6rem;
-    min-height: 40vh;
-    height: 40vh;
+    padding: 1rem 0 0 5.6rem;
+    margin-bottom: 0;
+
 
     @include respond(tab-land) {
       font-size: 4rem;
@@ -24,11 +24,17 @@
     }
   }
 
+  .logo-subtitle {
+    text-align: left;
+    padding-left: 6rem;
+  }
+
   .hikers__image {
     max-width: none;
     max-height: none;
-    width: 50px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    padding-left: 5.6rem
   }
   .jumbotron {
     background-color: white;
@@ -40,7 +46,6 @@
     font-size: 3.3rem;
     text-align: right;
     padding-right: 14%;
-    padding-top: 10%;
 
     @include respond(tab-land) {
       font-size: 4rem;

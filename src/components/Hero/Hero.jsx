@@ -8,9 +8,10 @@ import PortfolioContext from '../../context/context';
 
 const Hero = () => {
   const { hero } = useContext(PortfolioContext);
-  const { imgMountains, imgHikers, title, subtitle } = hero;
-  const [setIsDesktop] = useState(false);
-  const [setIsMobile] = useState(false);
+  const { cta, imgMountains, imgHikers, title, subtitle } = hero;
+  const [showSubtitle, setShowSubtitle] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -20,12 +21,18 @@ const Hero = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
+    setTimeout(() => setShowSubtitle(true), 300);
+    setTimeout(() => setShowSubtitle(false), 4000);
   }, []);
-
+  isDesktop(); // just for now
+  isMobile(); // just for now
   return (
     <div id="landing">
       <Fade top cascade duration={800} delay={500} distance="130px">
         <h1 className="hero-title logo">{title}</h1>
+      </Fade>
+      <Fade duration={800} delay={7000} distance="130px">
+        <h2 className="logo-subtitle">{subtitle}</h2>
       </Fade>
       <section id="hero">
         <Container className="jumbotron">
@@ -39,9 +46,14 @@ const Hero = () => {
               <HikerImg alt="hikers" filename={imgHikers} />
             </div>
           </Fade>
-          <Zoom right duration={3000}>
+          <Zoom bottom opposite when={showSubtitle} duration={3000}>
             <h2 className="hero-subtitle">{subtitle}</h2>
           </Zoom>
+          <Fade right duration={1000} delay={5000} distance="30px">
+            <div className="">
+              <div>{cta}</div>
+            </div>
+          </Fade>
         </Container>
       </section>
     </div>
