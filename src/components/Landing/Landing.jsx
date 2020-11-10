@@ -46,16 +46,20 @@ const Landing = () => {
             <h2 className="tagline">{tagline}</h2>
           </Fade>
         </div>
-        <Fade top duration={800} delay={5000} distance="30px">
-          <Link to="coaching" smooth duration={1000}>
-            <h2>{navCoaching}</h2>
-          </Link>
-        </Fade>
-        <Fade top duration={800} delay={5000} distance="30px">
-          <Link to="about" smooth duration={1000}>
-            <h2>{navAbout}</h2>
-          </Link>
-        </Fade>
+        {isDesktop && (
+          <>
+            <Fade top duration={800} delay={5000} distance="30px">
+              <Link to="coaching" smooth duration={1000}>
+                <h2>{navCoaching}</h2>
+              </Link>
+            </Fade>
+            <Fade top duration={800} delay={5000} distance="30px">
+              <Link to="about" smooth duration={1000}>
+                <h2>{navAbout}</h2>
+              </Link>
+            </Fade>
+          </>
+        )}
       </section>
       <section id="images">
         <Container className="jumbotron">
