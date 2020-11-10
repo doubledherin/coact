@@ -16,20 +16,16 @@ export const landingContent = {
 };
 
 export const coachingContent = {
-  img: 'PilotOrPassenger.png',
+  img: 'LookingOutAirplaneWindow.png',
+  heading1: 'ARE YOU A PASSENGER',
+  heading2: 'OR A PILOT?',
   paragraphOne:
-    'Most clients come to me for various reasons: leadership competency, personal development, career perspective, relationship deepening or even burn-out. They often asked why they did not engage with coaching earlier.',
+    'Feeling stuck is a wake up call for redirection. There is no shortcut for getting a clarity what really matters and going for it.',
   paragraphTwo:
     'The answer seems obvious at first, for instance a challenging job, a conflict resolution or developing new skills. Slowly, other aspects show up and matters get more complex, for example dependencies or an interaction with others.',
   paragraphThree:
-    'When change at some point is necessary, which one are you? Feeling stuck is a wake up call for redirection. There is no shortcut for getting a clarity what really matters and going for it. What holds you back to go through?',
-  paragraphFour:
-    'It begins by creating room and time. Shifting a perspective does not come naturally without stirring it up. What you resist, persists. What could help is someone to mirror you, to raise questions that you did not ask yourself yet, and to be there when courage and support is needed.',
-  paragraphFive:
-    'This is where coaching comes in. The coach is a sparring partner and co-traveller of your journey of change.',
-  subheadOne: 'What do you really want?',
-  subheadTwo: 'Are you a passenger or a pilot?',
-  subheadThree: 'How to go through and get there?',
+    'When change at some point is necessary, where are you going to, growing and moving forward?',
+  subheading: 'What change do you really want to create?',
 };
 
 export const philosophyContent = {

@@ -1,22 +1,19 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'react-bootstrap';
-import Title from '../Title/Title';
-import FixedImage from '../Image/FixedImage';
+import { Row, Col } from 'react-bootstrap';
+import FluidImage from '../Image/FluidImage';
 import ContentContext from '../../contexts/content';
 
 const Coaching = () => {
   const { coaching } = useContext(ContentContext);
   const {
+    heading1,
+    heading2,
+    subheading,
     img,
     paragraphOne,
     paragraphTwo,
     paragraphThree,
-    paragraphFour,
-    paragraphFive,
-    subheadOne,
-    subheadTwo,
-    subheadThree,
   } = coaching;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -33,32 +30,27 @@ const Coaching = () => {
 
   return (
     <section id="coaching">
-      <Container>
-        <Title title="Coaching for Change" />
-        <Row className="coaching-wrapper">
-          <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="coaching-wrapper__image">
-                <FixedImage alt="person looking out window" filename={img} />
-              </div>
-            </Fade>
-          </Col>
-          <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <div className="coaching-wrapper__info">
-                <p className="coaching-wrapper__info-text">{paragraphOne}</p>
-                <h3>{subheadOne}</h3>
-                <p className="coaching-wrapper__info-text">{paragraphTwo}</p>
-                <h3>{subheadTwo}</h3>
-                <p className="coaching-wrapper__info-text">{paragraphThree}</p>
-                <h3>{subheadThree}</h3>
-                <p className="coaching-wrapper__info-text">{paragraphFour}</p>
-                <p className="coaching-wrapper__info-text">{paragraphFive}</p>
-              </div>
-            </Fade>
-          </Col>
-        </Row>
-      </Container>
+      <Row>
+        <Col md={6} sm={12} className="coaching-left">
+          <Fade bottom duration={1000} delay={600} distance="30px">
+            <div className="">
+              <FluidImage alt="person looking out window" filename={img} />
+            </div>
+          </Fade>
+        </Col>
+        <Col md={6} sm={12} className="coaching-right">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <h1>{heading1}</h1>
+            <h1>{heading2}</h1>
+          </Fade>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <p>{paragraphOne}</p>
+            <h3>{subheading}</h3>
+            <p>{paragraphTwo}</p>
+            <p>{paragraphThree}</p>
+          </Fade>
+        </Col>
+      </Row>
     </section>
   );
 };

@@ -33,10 +33,6 @@ body {
   margin: 0;
 }
 
-a {
-  cursor: pointer;
-}
-
 .skew {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -75,17 +71,23 @@ body {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 500;
   font-family: 'Sen', sans-serif;
+  font-size: 3.2rem;
 }
 
 h3 {
-  font-weight: 600;
+  font-weight: 1000;
+  font-size: 2rem;
+}
+
+p {
+  padding: 10px 0;
 }
 
 p,
 a {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 a,
@@ -94,6 +96,7 @@ a:hover,
 a:visited,
 a:active {
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -139,7 +142,7 @@ a:hover {
 .cta-btn {
   display: inline-block;
   position: relative;
-  padding: 0.8rem 1.6rem;
+  padding: 0.8rem 1.8rem;
   font-weight: bold;
   line-height: 1;
   z-index: 1;
@@ -273,7 +276,7 @@ a:hover {
 
 .back-to-top i {
   color: black;
-  margin: 1rem 0 1.6rem;
+  margin: 1rem 0 1.8rem;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   cursor: pointer;
@@ -455,11 +458,6 @@ section {
   margin-top: 5%;
 }
 
-#landing #cta .cta-text h1 {
-  font-size: 3.2rem;
-  font-weight: 500;
-}
-
 @media (max-width: 56.25em) {
   #landing #cta .cta-text {
     text-align: center;
@@ -577,22 +575,18 @@ section {
 }
 
 #coaching {
-  background-color: #aecaa5;
-  background-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
-  color: white;
-  height: 100%;
-  border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  padding-bottom: 10%;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0;
 }
 
-@media (max-width: 75em) {
-  #coaching {
-    height: 100%;
-    -webkit-clip-path: none;
-    clip-path: none;
-  }
+#coaching .row {
+  height: 100vh;
+}
+
+#coaching .coaching-right {
+  background-color: #e7f5de;
+  padding: 80px;
 }
 
 @media (max-width: 37.5em) {

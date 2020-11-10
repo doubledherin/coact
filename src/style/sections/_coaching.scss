@@ -1,21 +1,15 @@
 #coaching {
-  background-color: $primary-color;
-  background-image: linear-gradient(
-    135deg,
-    $primary-color 0%,
-    $secondary-color 100%
-  );
-  color: white;
-  height: 100%;
-  border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  padding-bottom: 10%;
+  min-height: 100vh;
+  height: 100vh;
+  padding: 0;
+  .row {
+    height: 100vh;
+  }
 
-  @include respond(tab-land) {
-    height: 100%;
-    -webkit-clip-path: none;
-    clip-path: none;
+  .coaching-right {
+    background-color: $coact-green;
+    padding: 80px;
+
   }
 
   .coaching-wrapper {
