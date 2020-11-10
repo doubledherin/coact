@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-scroll';
-import PortfolioContext from '../../context/context';
+import ContentContext from '../../contexts/content';
 
 const Footer = () => {
-  const { footer } = useContext(PortfolioContext);
+  const { footer } = useContext(ContentContext);
 
   return (
     <footer className="footer navbar-static-bottom">

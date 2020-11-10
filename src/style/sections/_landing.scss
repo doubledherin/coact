@@ -1,0 +1,90 @@
+
+#landing {
+  min-height: 100vh;
+  height: 100vh;
+
+  #logo {
+    .company-name {
+      font-family: 'Sen', sans-serif;
+      font-size: 6.6rem;
+      padding: 1rem 0 0 5.6rem;
+      margin-bottom: 0;
+  
+      @include respond(tab-land) {
+        font-size: 4rem;
+      }
+      @include respond(tab-port) {
+        font-size: 3.6rem;
+        text-align: center;
+      }
+      @include respond(phone) {
+        font-size: 3.5rem;
+        line-height: 1.5;
+      }
+      @include respond(phone-xs) {
+        font-size: 2.8rem;
+      }
+    }
+    .tagline {
+      text-align: left;
+      padding-left: 6rem;
+    }
+  }
+
+  #images {
+    .hikers__image {
+      margin-left: 5.6rem
+    }
+    .jumbotron {
+      background-color: white;
+      max-width: 100%;
+      padding: 0;
+    }
+    .tagline {
+      font-family: 'Sen', sans-serif;
+      font-size: 3.3rem;
+      text-align: right;
+      padding-right: 14%;
+  
+      @include respond(tab-land) {
+        font-size: 4rem;
+      }
+      @include respond(tab-port) {
+        font-size: 3.6rem;
+        text-align: center;
+        padding-right: 0;
+      }
+      @include respond(phone) {
+        font-size: 2.5rem;
+        line-height: 1.5;
+      }
+      @include respond(phone-xs) {
+        font-size: 2.8rem;
+      }
+    }
+    @include respond(phone) {
+      padding: 0;
+    }
+  }
+
+  #cta {
+    .corner-card {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 20vh;
+      width: 50vw;
+      background-color: $coact-green;
+      float: right;
+      border-radius: 15px 0 0 0;
+    }
+    .cta-text {
+      margin-left: 15%;
+      margin-top: 5%;
+      h1 {
+        font-size: 3.2rem;
+        font-weight: 500;  
+      }
+    }
+  }
+}

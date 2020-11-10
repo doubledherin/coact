@@ -2,12 +2,22 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import CoachingImg from '../Image/CoachingImg';
-import PortfolioContext from '../../context/context';
+import FixedImage from '../Image/FixedImage';
+import ContentContext from '../../contexts/content';
 
 const Coaching = () => {
-  const { coaching } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = coaching;
+  const { coaching } = useContext(ContentContext);
+  const {
+    img,
+    paragraphOne,
+    paragraphTwo,
+    paragraphThree,
+    paragraphFour,
+    paragraphFive,
+    subheadOne,
+    subheadTwo,
+    subheadThree,
+  } = coaching;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -29,31 +39,21 @@ const Coaching = () => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="coaching-wrapper__image">
-                <CoachingImg alt="mountain climber on mountainside" filename={img} />
+                <FixedImage alt="person looking out window" filename={img} />
               </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="coaching-wrapper__info">
-                <p className="coaching-wrapper__info-text">
-                  Most clients come to me for various reasons: leadership competency, personal development, career perspective, relationship deepening or even burn-out. They often asked why they did not engage with coaching earlier.
-                </p>
-                <h3>What do you really want?</h3>
-                <p className="coaching-wrapper__info-text">
-                  The answer seems obvious at first, for instance a challenging job, a conflict resolution or developing new skills. Slowly, other aspects show up and matters get more complex, for example dependencies or an interaction with others.
-                </p>
-                <h3>Are you a passenger or a pilot?</h3>
-                <p className="coaching-wrapper__info-text">
-                  When change at some point is necessary, which one are you? Feeling stuck is a wake up call for redirection. There is no shortcut for getting a clarity what really matters and going for it. What holds you back to go through?
-                </p>
-                <h3>How to go through and get there?</h3>
-                <p className="coaching-wrapper__info-text">
-                  It begins by creating room and time. Shifting a perspective does not come naturally without stirring it up. What you resist, persists. What could help is someone to mirror you, to raise questions that you did not ask yourself yet, and to be there when courage and support is needed.
-                </p>
-                <p className="coaching-wrapper__info-text">
-                  This is where coaching comes in. The coach is a sparring partner and co-traveller of your journey of change.
-                </p>
+                <p className="coaching-wrapper__info-text">{paragraphOne}</p>
+                <h3>{subheadOne}</h3>
+                <p className="coaching-wrapper__info-text">{paragraphTwo}</p>
+                <h3>{subheadTwo}</h3>
+                <p className="coaching-wrapper__info-text">{paragraphThree}</p>
+                <h3>{subheadThree}</h3>
+                <p className="coaching-wrapper__info-text">{paragraphFour}</p>
+                <p className="coaching-wrapper__info-text">{paragraphFive}</p>
               </div>
             </Fade>
           </Col>

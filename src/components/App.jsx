@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Hero from './Hero/Hero';
+import Landing from './Landing/Landing';
 import Coaching from './Coaching/Coaching';
 import Philosophy from './Philosophy/Philosophy';
 import Testimonials from './Testimonials/Testimonials';
@@ -8,40 +8,37 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
-import { PortfolioProvider } from '../context/context';
+import { ContentProvider } from '../contexts/content';
 
 import {
-  heroData,
-  aboutData,
-  coachingData,
-  philosophyData,
-  projectsData,
-  contactData,
-  footerData,
-} from '../mock/data';
+  landingContent,
+  aboutContent,
+  coachingContent,
+  philosophyContent,
+  consideringContent,
+  contactContent,
+} from '../content';
 
 function App() {
-  const [hero, setHero] = useState({});
+  const [landing, setLanding] = useState({});
   const [coaching, setCoaching] = useState({});
   const [philosophy, setPhilosophy] = useState({});
+  const [considering, setConsidering] = useState({});
   const [about, setAbout] = useState({});
-  const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
-  const [footer, setFooter] = useState({});
 
   useEffect(() => {
-    setHero({ ...heroData });
-    setCoaching({ ...coachingData });
-    setPhilosophy({ ...philosophyData });
-    setAbout({ ...aboutData });
-    setProjects([...projectsData]);
-    setContact({ ...contactData });
-    setFooter({ ...footerData });
+    setLanding({ ...landingContent });
+    setCoaching({ ...coachingContent });
+    setPhilosophy({ ...philosophyContent });
+    setConsidering({ ...consideringContent });
+    setAbout({ ...aboutContent });
+    setContact({ ...contactContent });
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, coaching, philosophy, about, projects, contact, footer }}>
-      <Hero />
+    <ContentProvider value={{ landing, coaching, philosophy, considering, about, contact }}>
+      <Landing />
       <Coaching />
       <Philosophy />
       <Testimonials />
@@ -49,7 +46,7 @@ function App() {
       <About />
       <Contact />
       <Footer />
-    </PortfolioProvider>
+    </ContentProvider>
   );
 }
 
