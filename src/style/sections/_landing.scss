@@ -5,10 +5,10 @@
 
   #header {
     display: flex;
-    justify-content: space-between;
-    margin: 0 50px;
+    margin: 0 100px;
     align-items: flex-end;
     .logo {
+      flex-grow: 2;
       .company-name {
         font-family: 'Sen', sans-serif;
         font-size: 6.6rem;
@@ -30,13 +30,12 @@
         }
       }
       .tagline {
-        font-size: 2.2rem;
         font-weight: 700;
       }
     }
     .nav-item {
-      font-size: 2.2rem;
       font-weight: 700;
+      padding-left: 300px;
       -webkit-transform: perspective(1px) translateZ(0);
       transform: perspective(1px) translateZ(0);
       box-shadow: 0 0 1px rgba(0, 0, 0, 0);

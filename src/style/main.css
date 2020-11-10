@@ -278,13 +278,16 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0 50px;
+  margin: 0 100px;
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
+}
+
+#landing #header .logo {
+  -webkit-box-flex: 2;
+  -ms-flex-positive: 2;
+  flex-grow: 2;
 }
 
 #landing #header .logo .company-name {
@@ -320,13 +323,12 @@ section {
 }
 
 #landing #header .logo .tagline {
-  font-size: 2.2rem;
   font-weight: 700;
 }
 
 #landing #header .nav-item {
-  font-size: 2.2rem;
   font-weight: 700;
+  padding-left: 300px;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
