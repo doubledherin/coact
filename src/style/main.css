@@ -49,6 +49,7 @@ body {
 
 h1 {
   font-weight: 700;
+  font-family: 'Sen', sans-serif;
 }
 
 h3 {
@@ -321,13 +322,7 @@ section {
   padding: 0;
 }
 
-@media (max-width: 37.5em) {
-  #landing #images {
-    padding: 0;
-  }
-}
-
-#landing #cta .tagline {
+#landing #images .tagline {
   font-family: 'Sen', sans-serif;
   font-size: 3.3rem;
   text-align: right;
@@ -335,13 +330,13 @@ section {
 }
 
 @media (max-width: 75em) {
-  #landing #cta .tagline {
+  #landing #images .tagline {
     font-size: 4rem;
   }
 }
 
 @media (max-width: 56.25em) {
-  #landing #cta .tagline {
+  #landing #images .tagline {
     font-size: 3.6rem;
     text-align: center;
     padding-right: 0;
@@ -349,16 +344,43 @@ section {
 }
 
 @media (max-width: 37.5em) {
-  #landing #cta .tagline {
+  #landing #images .tagline {
     font-size: 2.5rem;
     line-height: 1.5;
   }
 }
 
 @media (max-width: 20em) {
-  #landing #cta .tagline {
+  #landing #images .tagline {
     font-size: 2.8rem;
   }
+}
+
+@media (max-width: 37.5em) {
+  #landing #images {
+    padding: 0;
+  }
+}
+
+#landing #cta .corner-card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 20vh;
+  width: 50vw;
+  background-color: #e7f5de;
+  float: right;
+  border-radius: 15px 0 0 0;
+}
+
+#landing #cta .cta-text {
+  margin-left: 15%;
+  margin-top: 5%;
+}
+
+#landing #cta .cta-text h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
 }
 
 #about {

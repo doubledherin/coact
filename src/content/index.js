@@ -7,7 +7,8 @@ export const headContent = {
 export const landingContent = {
   companyName: 'co.act',
   tagline: 'LET\u2019S GO BEYOND',
-  cta: 'ARE YOU A PASSENGER OR A PILOT?',
+  cta1: 'ARE YOU A PASSENGER',
+  cta2: 'OR A PILOT?',
   imgMountains: 'Mountain.png',
   imgHikers: 'Hikers.png',
 };

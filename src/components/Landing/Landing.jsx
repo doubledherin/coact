@@ -8,7 +8,7 @@ import FixedImage from '../Image/FixedImage';
 
 const Landing = () => {
   const { landing } = useContext(ContentContext);
-  const { cta, imgMountains, imgHikers, companyName, tagline } = landing;
+  const { cta1, cta2, imgMountains, imgHikers, companyName, tagline } = landing;
   const [showtagline, setShowTagline] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -21,43 +21,40 @@ const Landing = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
-    setTimeout(() => setShowTagline(true), 300);
-    setTimeout(() => setShowTagline(false), 4000);
+    setTimeout(() => setShowTagline(true), 100);
+    setTimeout(() => setShowTagline(false), 3000);
   }, []);
-  if (isDesktop) {
-    console.log('is desktop');
-  }
-  if (isMobile) {
-    console.log('is mobile');
-  }
 
   return (
     <div id="landing">
       <section id="logo">
-        <Fade top cascade duration={800} delay={500} distance="130px">
+        <Fade top cascade duration={300} delay={500} distance="130px">
           <h1 className="company-name">{companyName}</h1>
         </Fade>
-        <Fade duration={800} delay={7000} distance="130px">
+        <Fade bottom={isDesktop} top={isMobile} duration={800} delay={5000} distance="30px">
           <h2 className="tagline">{tagline}</h2>
         </Fade>
       </section>
       <section id="images">
         <Container className="jumbotron">
-          <Fade duration={1000} delay={1000} distance="30px">
+          <Fade right duration={1000} delay={1000} distance="30px">
             <FluidImage alt="mountains in the distance" filename={imgMountains} />
           </Fade>
           <Fade left duration={1000} delay={1300} distance="30px">
             <FixedImage className="hikers__image" alt="hikers" filename={imgHikers} />
           </Fade>
+          <Zoom bottom opposite when={showtagline} duration={2000}>
+            <h2 className="tagline">{tagline}</h2>
+          </Zoom>
         </Container>
       </section>
       <section id="cta">
-        <Zoom bottom opposite when={showtagline} duration={3000}>
-          <h2 className="tagline">{tagline}</h2>
-        </Zoom>
         <Fade right duration={1000} delay={5000} distance="30px">
-          <div>
-            <div>{cta}</div>
+          <div className="corner-card">
+            <div className="cta-text">
+              <h1>{cta1}</h1>
+              <h1>{cta2}</h1>
+            </div>
           </div>
         </Fade>
       </section>
