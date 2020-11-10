@@ -92,7 +92,7 @@ export const landingContent = {
 **_Important Note_**: All the images must live inside the `src/images/` folder in order for Gatsby to show the images correctly.
 
 ```javascript
-export const aboutData = {
+export const aboutContent = {
   img: 'profile.jpg', // put your profile image (recommended aspect radio: square)
   paragraphOne: '',
   paragraphTwo: '',
@@ -108,17 +108,6 @@ export const contactData = {
   cta: '', // call to action text for the contact section
   btn: '', // text inside the button
   email: '',
-};
-```
-
-### Required - Disable GitHub buttons
-
-Set `isEnabled` to `false` once you finish setup your portfolio.\
-By setting to `false` it will hide the GitHub stars/fork buttons
-
-```javascript
-export const githubButtons = {
-  isEnabled: true, // true is the default value
 };
 ```
 

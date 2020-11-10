@@ -12,11 +12,11 @@ import { ContentProvider } from '../contexts/content';
 
 import {
   landingContent,
-  aboutData,
-  coachingData,
-  philosophyData,
-  consideringData,
-  contactData,
+  aboutContent,
+  coachingContent,
+  philosophyContent,
+  consideringContent,
+  contactContent,
 } from '../content';
 
 function App() {
@@ -29,11 +29,11 @@ function App() {
 
   useEffect(() => {
     setLanding({ ...landingContent });
-    setCoaching({ ...coachingData });
-    setPhilosophy({ ...philosophyData });
-    setConsidering({ ...consideringData });
-    setAbout({ ...aboutData });
-    setContact({ ...contactData });
+    setCoaching({ ...coachingContent });
+    setPhilosophy({ ...philosophyContent });
+    setConsidering({ ...consideringContent });
+    setAbout({ ...aboutContent });
+    setContact({ ...contactContent });
   }, []);
 
   return (

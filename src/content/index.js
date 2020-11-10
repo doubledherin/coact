@@ -1,5 +1,5 @@
 // HEAD DATA
-export const headData = {
+export const headContent = {
   title: '', // e.g: 'Name | Developer'
   lang: '', // e.g: en, es, fr, jp
   description: '', // e.g: Welcome to my website
@@ -13,8 +13,7 @@ export const landingContent = {
   imgHikers: 'Hikers.png',
 };
 
-// COACHING DATA
-export const coachingData = {
+export const coachingContent = {
   img: 'PilotOrPassenger.png',
   paragraphOne:
     'Most clients come to me for various reasons: leadership competency, personal development, career perspective, relationship deepening or even burn-out. They often asked why they did not engage with coaching earlier.',
@@ -32,12 +31,12 @@ export const coachingData = {
 };
 
 // PHILOSOPHY DATA
-export const philosophyData = {
+export const philosophyContent = {
   img: 'MountainToClimb.jpeg',
 };
 
 // CONSIDERING DATA
-export const consideringData = {
+export const consideringContent = {
   subheadOne: 'Before getting started',
   subheadTwo: 'Coaching package',
   paragraphOne:
@@ -47,7 +46,7 @@ export const consideringData = {
 };
 
 // ABOUT DATA
-export const aboutData = {
+export const aboutContent = {
   img: 'profile-drawing.png',
   paragraphOne:
     'In a small neighborhood of Saigon, a group of kids ran to be the first. Neither winning nor running interested me, staying aside became a habit. The past had to hide, survival was the present, and the future felt liked a dark hole. Mixture of being poor and fear, escape postulated as alternative. That is how the world presented itself to me',
@@ -60,14 +59,8 @@ export const aboutData = {
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
-// CONTACT DATA
-export const contactData = {
+export const contactContent = {
   cta: '',
   btn: '',
   email: '',
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
 };

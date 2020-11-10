@@ -1,12 +1,12 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import App from '../components/App';
-import { headData } from '../content';
+import { headContent } from '../content';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 export default () => {
-  const { title, lang, description } = headData;
+  const { title, lang, description } = headContent;
 
   return (
     <>
