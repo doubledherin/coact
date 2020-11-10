@@ -24,8 +24,13 @@ const Hero = () => {
     setTimeout(() => setShowSubtitle(true), 300);
     setTimeout(() => setShowSubtitle(false), 4000);
   }, []);
-  isDesktop(); // just for now
-  isMobile(); // just for now
+  if (isDesktop) {
+    console.log('is desktop');
+  }
+  if (isMobile) {
+    console.log('is mobile');
+  }
+
   return (
     <div id="landing">
       <Fade top cascade duration={800} delay={500} distance="130px">
