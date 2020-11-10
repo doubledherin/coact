@@ -76,10 +76,10 @@ Once your server has started, go to this url `http://localhost:8000/` and you wi
 
 Go to `/src/content/data.js` and fill your information, they are 5 objects:
 
-### Hero Section
+### Landing Section
 
 ```javascript
-export const heroData = {
+export const landingContent = {
   title: '', // Hello, my name is
   name: '', // John
   subtitle: '', // I'm the Unknown Developer.

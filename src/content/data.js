@@ -5,8 +5,7 @@ export const headData = {
   description: '', // e.g: Welcome to my website
 };
 
-// HERO DATA
-export const heroData = {
+export const landingContent = {
   title: 'co.act',
   subtitle: 'LET\u2019S GO BEYOND',
   cta: 'ARE YOU A PASSENGER OR A PILOT?',

@@ -1,14 +1,14 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
-import Zoom from 'react-reveal/Zoom';
+import { Fade, Zoom } from 'react-reveal';
+
 import HeroImg from '../Image/HeroImg';
 import HikerImg from '../Image/HikerImg';
 import ContentContext from '../../contexts/content';
 
-const Hero = () => {
-  const { hero } = useContext(ContentContext);
-  const { cta, imgMountains, imgHikers, title, subtitle } = hero;
+const Landing = () => {
+  const { landing } = useContext(ContentContext);
+  const { cta, imgMountains, imgHikers, title, subtitle } = landing;
   const [showSubtitle, setShowSubtitle] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -41,7 +41,7 @@ const Hero = () => {
       </Fade>
       <section id="hero">
         <Container className="jumbotron">
-          <Fade left duration={1000} delay={1000} distance="30px">
+          <Fade duration={1000} delay={1000} distance="30px">
             <div className="coaching-wrapper__image">
               <HeroImg alt="mountains in the distance" filename={imgMountains} />
             </div>
@@ -65,4 +65,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Landing;

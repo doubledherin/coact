@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Hero from './Hero/Hero';
+import Landing from './Landing/Landing';
 import Coaching from './Coaching/Coaching';
 import Philosophy from './Philosophy/Philosophy';
 import Testimonials from './Testimonials/Testimonials';
@@ -11,7 +11,7 @@ import Footer from './Footer/Footer';
 import { ContentProvider } from '../contexts/content';
 
 import {
-  heroData,
+  landingContent,
   aboutData,
   coachingData,
   philosophyData,
@@ -20,7 +20,7 @@ import {
 } from '../content/data';
 
 function App() {
-  const [hero, setHero] = useState({});
+  const [landing, setLanding] = useState({});
   const [coaching, setCoaching] = useState({});
   const [philosophy, setPhilosophy] = useState({});
   const [considering, setConsidering] = useState({});
@@ -28,7 +28,7 @@ function App() {
   const [contact, setContact] = useState({});
 
   useEffect(() => {
-    setHero({ ...heroData });
+    setLanding({ ...landingContent });
     setCoaching({ ...coachingData });
     setPhilosophy({ ...philosophyData });
     setConsidering({ ...consideringData });
@@ -37,8 +37,8 @@ function App() {
   }, []);
 
   return (
-    <ContentProvider value={{ hero, coaching, philosophy, considering, about, contact }}>
-      <Hero />
+    <ContentProvider value={{ landing, coaching, philosophy, considering, about, contact }}>
+      <Landing />
       <Coaching />
       <Philosophy />
       <Testimonials />
