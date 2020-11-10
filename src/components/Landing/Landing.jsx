@@ -31,7 +31,7 @@ const Landing = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
-    setTimeout(() => setShowTagline(true), 100);
+    setTimeout(() => setShowTagline(true), 1);
     setTimeout(() => setShowTagline(false), 3000);
   }, []);
 
@@ -42,20 +42,20 @@ const Landing = () => {
           <Fade top cascade duration={300} delay={500} distance="130px">
             <h1 className="company-name">{companyName}</h1>
           </Fade>
-          <Fade bottom={isDesktop} top={isMobile} duration={800} delay={5000} distance="30px">
+          <Fade bottom={isDesktop} top={isMobile} duration={800} delay={4000} distance="30px">
             <h2 className="tagline">{tagline}</h2>
           </Fade>
         </div>
         {isDesktop && (
           <>
-            <Fade top duration={800} delay={5000} distance="30px">
+            <Fade top duration={800} delay={4000} distance="30px">
               <Link to="coaching" smooth duration={1000}>
-                <h2 className="nav-item">{navCoaching}</h2>
+                <h2 className="nav-item skew">{navCoaching}</h2>
               </Link>
             </Fade>
-            <Fade top duration={800} delay={5000} distance="30px">
+            <Fade top duration={800} delay={4000} distance="30px">
               <Link to="about" smooth duration={1000}>
-                <h2 className="nav-item">{navAbout}</h2>
+                <h2 className="nav-item skew">{navAbout}</h2>
               </Link>
             </Fade>
           </>
@@ -75,14 +75,16 @@ const Landing = () => {
         </Container>
       </section>
       <section id="cta">
-        <Fade right duration={1000} delay={5000} distance="30px">
-          <div className="corner-card">
-            <div className="cta-text">
-              <h1>{cta1}</h1>
-              <h1>{cta2}</h1>
+        <Link to="coaching" smooth duration={1000}>
+          <Fade right duration={1000} delay={4000} distance="30px">
+            <div className="corner-card">
+              <div className="cta-text">
+                <h1 className="skew">{cta1}</h1>
+                <h1 className="skew">{cta2}</h1>
+              </div>
             </div>
-          </div>
-        </Fade>
+          </Fade>
+        </Link>
       </section>
     </div>
   );
