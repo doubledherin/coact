@@ -17,7 +17,7 @@ import {
   philosophyData,
   consideringData,
   contactData,
-} from '../content/data';
+} from '../content';
 
 function App() {
   const [landing, setLanding] = useState({});
