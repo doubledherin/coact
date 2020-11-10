@@ -8,8 +8,8 @@ import ContentContext from '../../contexts/content';
 
 const Landing = () => {
   const { landing } = useContext(ContentContext);
-  const { cta, imgMountains, imgHikers, title, subtitle } = landing;
-  const [showSubtitle, setShowSubtitle] = useState(false);
+  const { cta, imgMountains, imgHikers, companyName, tagline } = landing;
+  const [showtagline, setShowTagline] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -21,8 +21,8 @@ const Landing = () => {
       setIsMobile(true);
       setIsDesktop(false);
     }
-    setTimeout(() => setShowSubtitle(true), 300);
-    setTimeout(() => setShowSubtitle(false), 4000);
+    setTimeout(() => setShowTagline(true), 300);
+    setTimeout(() => setShowTagline(false), 4000);
   }, []);
   if (isDesktop) {
     console.log('is desktop');
@@ -33,33 +33,35 @@ const Landing = () => {
 
   return (
     <div id="landing">
-      <Fade top cascade duration={800} delay={500} distance="130px">
-        <h1 className="hero-title logo">{title}</h1>
-      </Fade>
-      <Fade duration={800} delay={7000} distance="130px">
-        <h2 className="logo-subtitle">{subtitle}</h2>
-      </Fade>
-      <section id="hero">
+      <section id="logo">
+        <Fade top cascade duration={800} delay={500} distance="130px">
+          <h1 className="company-name">{companyName}</h1>
+        </Fade>
+        <Fade duration={800} delay={7000} distance="130px">
+          <h2 className="tagline">{tagline}</h2>
+        </Fade>
+      </section>
+      <section id="images">
         <Container className="jumbotron">
           <Fade duration={1000} delay={1000} distance="30px">
-            <div className="coaching-wrapper__image">
-              <HeroImg alt="mountains in the distance" filename={imgMountains} />
-            </div>
+            <HeroImg alt="mountains in the distance" filename={imgMountains} />
           </Fade>
           <Fade right duration={1000} delay={1000} distance="30px">
             <div className="hikers__image">
               <HikerImg alt="hikers" filename={imgHikers} />
             </div>
           </Fade>
-          <Zoom bottom opposite when={showSubtitle} duration={3000}>
-            <h2 className="hero-subtitle">{subtitle}</h2>
-          </Zoom>
-          <Fade right duration={1000} delay={5000} distance="30px">
-            <div className="">
-              <div>{cta}</div>
-            </div>
-          </Fade>
         </Container>
+      </section>
+      <section id="cta">
+        <Zoom bottom opposite when={showtagline} duration={3000}>
+          <h2 className="tagline">{tagline}</h2>
+        </Zoom>
+        <Fade right duration={1000} delay={5000} distance="30px">
+          <div>
+            <div>{cta}</div>
+          </div>
+        </Fade>
       </section>
     </div>
   );

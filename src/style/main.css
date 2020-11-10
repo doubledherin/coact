@@ -47,11 +47,6 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.logo,
-.hero-subtitle {
-  font-family: 'Sen', sans-serif;
-}
-
 h1 {
   font-weight: 700;
 }
@@ -270,6 +265,103 @@ section {
     border: none;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+#landing {
+  min-height: 100vh;
+  height: 100vh;
+}
+
+#landing #logo .company-name {
+  font-family: 'Sen', sans-serif;
+  font-size: 6.6rem;
+  padding: 1rem 0 0 5.6rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 75em) {
+  #landing #logo .company-name {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  #landing #logo .company-name {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 37.5em) {
+  #landing #logo .company-name {
+    font-size: 3.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 20em) {
+  #landing #logo .company-name {
+    font-size: 2.8rem;
+  }
+}
+
+#landing #logo .tagline {
+  text-align: left;
+  padding-left: 6rem;
+}
+
+#landing #images .hikers__image {
+  max-width: none;
+  max-height: none;
+  width: 150px;
+  height: 150px;
+  padding-left: 5.6rem;
+}
+
+#landing #images .jumbotron {
+  background-color: white;
+  max-width: 100%;
+  padding: 0;
+}
+
+@media (max-width: 37.5em) {
+  #landing #images {
+    padding: 0;
+  }
+}
+
+#landing #cta .tagline {
+  font-family: 'Sen', sans-serif;
+  font-size: 3.3rem;
+  text-align: right;
+  padding-right: 14%;
+}
+
+@media (max-width: 75em) {
+  #landing #cta .tagline {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  #landing #cta .tagline {
+    font-size: 3.6rem;
+    text-align: center;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 37.5em) {
+  #landing #cta .tagline {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 20em) {
+  #landing #cta .tagline {
+    font-size: 2.8rem;
   }
 }
 
@@ -639,157 +731,6 @@ section {
   #contact .contact-wrapper__text,
   #contact .contact-wrapper a {
     font-size: 2rem;
-  }
-}
-
-#landing {
-  min-height: 100vh;
-  height: 100vh;
-}
-
-#landing .hero-title {
-  font-size: 6.6rem;
-  padding: 1rem 0 0 5.6rem;
-  margin-bottom: 0;
-}
-
-@media (max-width: 75em) {
-  #landing .hero-title {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 56.25em) {
-  #landing .hero-title {
-    font-size: 3.6rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 37.5em) {
-  #landing .hero-title {
-    font-size: 3.5rem;
-    line-height: 1.5;
-  }
-}
-
-@media (max-width: 20em) {
-  #landing .hero-title {
-    font-size: 2.8rem;
-  }
-}
-
-#landing .logo-subtitle {
-  text-align: left;
-  padding-left: 6rem;
-}
-
-#landing .hikers__image {
-  max-width: none;
-  max-height: none;
-  width: 150px;
-  height: 150px;
-  padding-left: 5.6rem;
-}
-
-#landing .jumbotron {
-  background-color: white;
-  max-width: 100%;
-  padding: 0;
-}
-
-#landing .hero-subtitle {
-  font-size: 3.3rem;
-  text-align: right;
-  padding-right: 14%;
-}
-
-@media (max-width: 75em) {
-  #landing .hero-subtitle {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 56.25em) {
-  #landing .hero-subtitle {
-    font-size: 3.6rem;
-    text-align: center;
-    padding-right: 0;
-  }
-}
-
-@media (max-width: 37.5em) {
-  #landing .hero-subtitle {
-    font-size: 2.5rem;
-    line-height: 1.5;
-  }
-}
-
-@media (max-width: 20em) {
-  #landing .hero-subtitle {
-    font-size: 2.8rem;
-  }
-}
-
-#landing .hero-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-top: 5%;
-}
-
-@media (max-width: 56.25em) {
-  #landing .hero-cta {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 37.5em) {
-  #landing .hero-cta {
-    margin-top: 15%;
-  }
-}
-
-#landing .hero-cta a {
-  font-size: 2.4rem;
-}
-
-@media (max-width: 37.5em) {
-  #landing .hero-cta a {
-    font-size: 1.5rem;
-  }
-}
-
-#hero {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-bottom: 0px;
-  background: white;
-  font-weight: 400;
-  color: #272341;
-  margin-bottom: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: -1;
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
-}
-
-@media (max-width: 37.5em) {
-  #hero {
-    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

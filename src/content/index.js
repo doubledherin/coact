@@ -1,4 +1,3 @@
-// HEAD DATA
 export const headContent = {
   title: '', // e.g: 'Name | Developer'
   lang: '', // e.g: en, es, fr, jp
@@ -6,8 +5,8 @@ export const headContent = {
 };
 
 export const landingContent = {
-  title: 'co.act',
-  subtitle: 'LET\u2019S GO BEYOND',
+  companyName: 'co.act',
+  tagline: 'LET\u2019S GO BEYOND',
   cta: 'ARE YOU A PASSENGER OR A PILOT?',
   imgMountains: 'Mountain.png',
   imgHikers: 'Hikers.png',
@@ -30,12 +29,10 @@ export const coachingContent = {
   subheadThree: 'How to go through and get there?',
 };
 
-// PHILOSOPHY DATA
 export const philosophyContent = {
   img: 'MountainToClimb.jpeg',
 };
 
-// CONSIDERING DATA
 export const consideringContent = {
   subheadOne: 'Before getting started',
   subheadTwo: 'Coaching package',
@@ -45,7 +42,6 @@ export const consideringContent = {
     'The length of the coaching process and frequency of sessions are determined accordingly with the client. I recommend a package of 8 sessions of 50 minutes over a period of four months to allow a certain level of depth and sustainability. I coach via Zoom, over the phone or inperson.',
 };
 
-// ABOUT DATA
 export const aboutContent = {
   img: 'profile-drawing.png',
   paragraphOne:
