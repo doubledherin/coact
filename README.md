@@ -74,7 +74,7 @@ Once your server has started, go to this url `http://localhost:8000/` and you wi
 
 ### Step 1 - STRUCTURE
 
-Go to `/src/mock/data.js` and fill your information, they are 5 objects:
+Go to `/src/content/data.js` and fill your information, they are 5 objects:
 
 ### Hero Section
 
@@ -108,38 +108,6 @@ export const contactData = {
   cta: '', // call to action text for the contact section
   btn: '', // text inside the button
   email: '',
-};
-```
-
-### Footer Section
-
-You can remove or add as many you social-media icons you want.\
-Just put an object with the corresponding values inside the networks `array` or remove it from there.
-
-```javascript
-export const footerData = {
-  networks: [
-    {
-      id: nanoid(),
-      name: 'twitter',
-      url: '', // your twitter url
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '', // your codepen url
-    },
-    {
-      id: nanoid(),
-      name: 'linkedin',
-      url: '', // your linkedin url
-    },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: '', // your github url
-    },
-  ],
 };
 ```
 
@@ -193,9 +161,6 @@ I highly recommend to use [Netlify](https://netlify.com) to achieve this on the 
 
 - **Jacobo Martinez** - [https://github.com/cobidev](https://github.com/cobidev)
 
-
 ## License 📄
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-

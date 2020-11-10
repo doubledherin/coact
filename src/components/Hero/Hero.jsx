@@ -4,10 +4,10 @@ import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 import HeroImg from '../Image/HeroImg';
 import HikerImg from '../Image/HikerImg';
-import PortfolioContext from '../../context/context';
+import ContentContext from '../../contexts/content';
 
 const Hero = () => {
-  const { hero } = useContext(PortfolioContext);
+  const { hero } = useContext(ContentContext);
   const { cta, imgMountains, imgHikers, title, subtitle } = hero;
   const [showSubtitle, setShowSubtitle] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);

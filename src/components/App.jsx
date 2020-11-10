@@ -8,39 +8,36 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
 
-import { PortfolioProvider } from '../context/context';
+import { ContentProvider } from '../contexts/content';
 
 import {
   heroData,
   aboutData,
   coachingData,
   philosophyData,
-  projectsData,
+  consideringData,
   contactData,
-  footerData,
-} from '../mock/data';
+} from '../content/data';
 
 function App() {
   const [hero, setHero] = useState({});
   const [coaching, setCoaching] = useState({});
   const [philosophy, setPhilosophy] = useState({});
+  const [considering, setConsidering] = useState({});
   const [about, setAbout] = useState({});
-  const [projects, setProjects] = useState([]);
   const [contact, setContact] = useState({});
-  const [footer, setFooter] = useState({});
 
   useEffect(() => {
     setHero({ ...heroData });
     setCoaching({ ...coachingData });
     setPhilosophy({ ...philosophyData });
+    setConsidering({ ...consideringData });
     setAbout({ ...aboutData });
-    setProjects([...projectsData]);
     setContact({ ...contactData });
-    setFooter({ ...footerData });
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, coaching, philosophy, about, projects, contact, footer }}>
+    <ContentProvider value={{ hero, coaching, philosophy, considering, about, contact }}>
       <Hero />
       <Coaching />
       <Philosophy />
@@ -49,7 +46,7 @@ function App() {
       <About />
       <Contact />
       <Footer />
-    </PortfolioProvider>
+    </ContentProvider>
   );
 }
 
