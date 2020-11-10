@@ -3,31 +3,35 @@
   min-height: 100vh;
   height: 100vh;
 
-  #logo {
-    .company-name {
-      font-family: 'Sen', sans-serif;
-      font-size: 6.6rem;
-      padding: 1rem 0 0 5.6rem;
-      margin-bottom: 0;
-  
-      @include respond(tab-land) {
-        font-size: 4rem;
+  #header {
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      .company-name {
+        font-family: 'Sen', sans-serif;
+        font-size: 6.6rem;
+        padding: 1rem 0 0 5.6rem;
+        margin-bottom: 0;
+    
+        @include respond(tab-land) {
+          font-size: 4rem;
+        }
+        @include respond(tab-port) {
+          font-size: 3.6rem;
+          text-align: center;
+        }
+        @include respond(phone) {
+          font-size: 3.5rem;
+          line-height: 1.5;
+        }
+        @include respond(phone-xs) {
+          font-size: 2.8rem;
+        }
       }
-      @include respond(tab-port) {
-        font-size: 3.6rem;
-        text-align: center;
+      .tagline {
+        text-align: left;
+        padding-left: 6rem;
       }
-      @include respond(phone) {
-        font-size: 3.5rem;
-        line-height: 1.5;
-      }
-      @include respond(phone-xs) {
-        font-size: 2.8rem;
-      }
-    }
-    .tagline {
-      text-align: left;
-      padding-left: 6rem;
     }
   }
 

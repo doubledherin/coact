@@ -11,6 +11,8 @@ export const landingContent = {
   cta2: 'OR A PILOT?',
   imgMountains: 'Mountain.png',
   imgHikers: 'Hikers.png',
+  navCoaching: 'COACHING',
+  navAbout: 'ABOUT',
 };
 
 export const coachingContent = {

@@ -274,7 +274,16 @@ section {
   height: 100vh;
 }
 
-#landing #logo .company-name {
+#landing #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#landing #header .logo .company-name {
   font-family: 'Sen', sans-serif;
   font-size: 6.6rem;
   padding: 1rem 0 0 5.6rem;
@@ -282,32 +291,32 @@ section {
 }
 
 @media (max-width: 75em) {
-  #landing #logo .company-name {
+  #landing #header .logo .company-name {
     font-size: 4rem;
   }
 }
 
 @media (max-width: 56.25em) {
-  #landing #logo .company-name {
+  #landing #header .logo .company-name {
     font-size: 3.6rem;
     text-align: center;
   }
 }
 
 @media (max-width: 37.5em) {
-  #landing #logo .company-name {
+  #landing #header .logo .company-name {
     font-size: 3.5rem;
     line-height: 1.5;
   }
 }
 
 @media (max-width: 20em) {
-  #landing #logo .company-name {
+  #landing #header .logo .company-name {
     font-size: 2.8rem;
   }
 }
 
-#landing #logo .tagline {
+#landing #header .logo .tagline {
   text-align: left;
   padding-left: 6rem;
 }

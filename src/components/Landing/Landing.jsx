@@ -8,7 +8,16 @@ import FixedImage from '../Image/FixedImage';
 
 const Landing = () => {
   const { landing } = useContext(ContentContext);
-  const { cta1, cta2, imgMountains, imgHikers, companyName, tagline } = landing;
+  const {
+    companyName,
+    cta1,
+    cta2,
+    imgHikers,
+    imgMountains,
+    navAbout,
+    navCoaching,
+    tagline,
+  } = landing;
   const [showtagline, setShowTagline] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -27,12 +36,20 @@ const Landing = () => {
 
   return (
     <div id="landing">
-      <section id="logo">
-        <Fade top cascade duration={300} delay={500} distance="130px">
-          <h1 className="company-name">{companyName}</h1>
+      <section id="header">
+        <div className="logo">
+          <Fade top cascade duration={300} delay={500} distance="130px">
+            <h1 className="company-name">{companyName}</h1>
+          </Fade>
+          <Fade bottom={isDesktop} top={isMobile} duration={800} delay={5000} distance="30px">
+            <h2 className="tagline">{tagline}</h2>
+          </Fade>
+        </div>
+        <Fade bottom={isDesktop} top={isMobile} duration={800} delay={5000} distance="30px">
+          <h2>{navCoaching}</h2>
         </Fade>
         <Fade bottom={isDesktop} top={isMobile} duration={800} delay={5000} distance="30px">
-          <h2 className="tagline">{tagline}</h2>
+          <h2>{navAbout}</h2>
         </Fade>
       </section>
       <section id="images">
