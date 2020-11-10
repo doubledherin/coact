@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import CoachingImg from '../Image/CoachingImg';
+import FixedImage from '../Image/FixedImage';
 import ContentContext from '../../contexts/content';
 
 const Coaching = () => {
@@ -39,7 +39,7 @@ const Coaching = () => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="coaching-wrapper__image">
-                <CoachingImg alt="mountain climber on mountainside" filename={img} />
+                <FixedImage alt="person looking out window" filename={img} />
               </div>
             </Fade>
           </Col>

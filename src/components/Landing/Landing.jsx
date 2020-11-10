@@ -2,9 +2,9 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import { Fade, Zoom } from 'react-reveal';
 
-import HeroImg from '../Image/HeroImg';
-import HikerImg from '../Image/HikerImg';
 import ContentContext from '../../contexts/content';
+import FluidImage from '../Image/FluidImage';
+import FixedImage from '../Image/FixedImage';
 
 const Landing = () => {
   const { landing } = useContext(ContentContext);
@@ -44,12 +44,10 @@ const Landing = () => {
       <section id="images">
         <Container className="jumbotron">
           <Fade duration={1000} delay={1000} distance="30px">
-            <HeroImg alt="mountains in the distance" filename={imgMountains} />
+            <FluidImage alt="mountains in the distance" filename={imgMountains} />
           </Fade>
-          <Fade right duration={1000} delay={1000} distance="30px">
-            <div className="hikers__image">
-              <HikerImg alt="hikers" filename={imgHikers} />
-            </div>
+          <Fade left duration={1000} delay={1300} distance="30px">
+            <FixedImage className="hikers__image" alt="hikers" filename={imgHikers} />
           </Fade>
         </Container>
       </section>
