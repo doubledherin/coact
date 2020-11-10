@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import { Fade, Zoom } from 'react-reveal';
+import { Link } from 'react-scroll';
 
 import ContentContext from '../../contexts/content';
 import FluidImage from '../Image/FluidImage';
@@ -45,11 +46,15 @@ const Landing = () => {
             <h2 className="tagline">{tagline}</h2>
           </Fade>
         </div>
-        <Fade bottom={isDesktop} top={isMobile} duration={800} delay={5000} distance="30px">
-          <h2>{navCoaching}</h2>
+        <Fade top duration={800} delay={5000} distance="30px">
+          <Link to="coaching" smooth duration={1000}>
+            <h2>{navCoaching}</h2>
+          </Link>
         </Fade>
-        <Fade bottom={isDesktop} top={isMobile} duration={800} delay={5000} distance="30px">
-          <h2>{navAbout}</h2>
+        <Fade top duration={800} delay={5000} distance="30px">
+          <Link to="about" smooth duration={1000}>
+            <h2>{navAbout}</h2>
+          </Link>
         </Fade>
       </section>
       <section id="images">
