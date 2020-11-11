@@ -38,7 +38,14 @@ const Landing = () => {
             <h2 className="tagline">{tagline}</h2>
           </Fade>
         </div>
-        {isDesktop && <NavBar navItems={['COACHING', 'ABOUT']} />}
+        {isDesktop && (
+          <NavBar
+            navItems={[
+              { to: 'coaching', text: 'COACHING' },
+              { to: 'about', text: 'ABOUT' },
+            ]}
+          />
+        )}
       </section>
       <section id="images">
         <Container className="jumbotron">
