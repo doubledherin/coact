@@ -8,7 +8,7 @@ import ContentContext from '../../contexts/content';
 
 const Coaching = () => {
   const { coaching } = useContext(ContentContext);
-  const { subheading, img, paragraphOne, paragraphTwo, paragraphThree } = coaching;
+  const { cta, subheading, img, paragraphOne, paragraphTwo, paragraphThree } = coaching;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -37,6 +37,15 @@ const Coaching = () => {
               />
             </div>
           </Fade>
+          <Link to="philosophy" smooth duration={1000}>
+            <Fade bottom duration={1000} delay={3000} distance="30px">
+              <div className="corner-card">
+                <div className="cta-text">
+                  <h1 className="skew">{cta}</h1>
+                </div>
+              </div>
+            </Fade>
+          </Link>
         </Col>
         <Col md={6} sm={12} className="coaching-right">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
@@ -45,15 +54,6 @@ const Coaching = () => {
             <p>{paragraphTwo}</p>
             <p>{paragraphThree}</p>
           </Fade>
-          <Link to="philosophy" smooth duration={1000}>
-            <Fade bottom duration={1000} delay={4000} distance="30px">
-              <div className="corner-card">
-                <div className="cta-text">
-                  <h1 className="skew">STRONGER THAN EXCUSES</h1>
-                </div>
-              </div>
-            </Fade>
-          </Link>
         </Col>
       </Row>
     </section>

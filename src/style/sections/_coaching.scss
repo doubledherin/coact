@@ -1,15 +1,14 @@
 #coaching {
-  .row {
-    height: 100vh;
-    align-items: center;
-  }
-
   .coaching-left {
     .image {
       @include respond(phone) {
         height: 20vh;
         margin: 40px 0;
       }  
+    }
+    .cta-text {
+      text-align: center;
+      padding-top: 100px;
     }
   }
 

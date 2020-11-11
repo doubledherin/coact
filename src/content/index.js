@@ -17,6 +17,7 @@ export const landingContent = {
 
 export const coachingContent = {
   img: 'LookingOutAirplaneWindow.png',
+  cta: 'STRONGER THAN EXCUSES',
   paragraphOne:
     'Feeling stuck is a wake up call for redirection. There is no shortcut for getting a clarity what really matters and going for it.',
   paragraphTwo:
@@ -28,6 +29,14 @@ export const coachingContent = {
 
 export const philosophyContent = {
   img: 'MountainToClimb.jpeg',
+  paragraphOne:
+    'What you resist, persists. Shifting a perspective does not come naturally without stirring it up and not sliding back to your own pattern. What could help is someone to mirror you, to raise questions that you did not ask yourself yet, and to be there when courage and support is needed.',
+  paragraphTwo:
+    'This is where coaching comes in. The coach is a sparring partner and co-traveller of your journey of change.',
+  businessmanImg: 'BusinessMan.jpeg',
+  businessmanAlt: 'businessman',
+  mountainImg: 'Path.jpeg',
+  mountainAlt: 'mountain',
 };
 
 export const consideringContent = {
