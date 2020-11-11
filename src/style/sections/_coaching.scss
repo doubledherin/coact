@@ -1,5 +1,6 @@
 #coaching {
   .coaching-left {
+    margin-top: 100px;
     .image {
       @include respond(phone) {
         height: 20vh;

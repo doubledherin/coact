@@ -397,6 +397,7 @@ a:hover {
 #landing #cta .cta-text {
   margin-left: 15%;
   margin-top: 5%;
+  white-space: pre-wrap;
 }
 
 @media (max-width: 56.25em) {
@@ -404,6 +405,10 @@ a:hover {
     text-align: center;
     margin-left: 0;
   }
+}
+
+#coaching .coaching-left {
+  margin-top: 100px;
 }
 
 @media (max-width: 37.5em) {
@@ -512,6 +517,14 @@ a:hover {
     background: transparent;
     font-style: normal;
   }
+}
+
+#excuses .container {
+  max-width: 1240px;
+}
+
+#excuses .container .excuses-left .text {
+  padding-right: 150px;
 }
 
 #philosophy .container {

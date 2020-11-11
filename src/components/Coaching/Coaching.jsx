@@ -1,8 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Row, Col } from 'react-bootstrap';
-import { Link } from 'react-scroll';
 
+import Prompt from '../common/Prompt';
 import FluidImage from '../Image/FluidImage';
 import ContentContext from '../../contexts/content';
 
@@ -37,15 +37,7 @@ const Coaching = () => {
               />
             </div>
           </Fade>
-          <Link to="philosophy" smooth duration={1000}>
-            <Fade bottom duration={1000} delay={3000} distance="30px">
-              <div className="corner-card">
-                <div className="cta-text">
-                  <h1 className="skew">{cta}</h1>
-                </div>
-              </div>
-            </Fade>
-          </Link>
+          <Prompt linkTo="excuses" text={cta} />
         </Col>
         <Col md={6} sm={12} className="coaching-right">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

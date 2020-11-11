@@ -6,19 +6,11 @@ import { Link } from 'react-scroll';
 import ContentContext from '../../contexts/content';
 import FluidImage from '../Image/FluidImage';
 import FixedImage from '../Image/FixedImage';
+import Prompt from '../common/Prompt';
 
 const Landing = () => {
   const { landing } = useContext(ContentContext);
-  const {
-    companyName,
-    cta1,
-    cta2,
-    imgHikers,
-    imgMountains,
-    navAbout,
-    navCoaching,
-    tagline,
-  } = landing;
+  const { companyName, cta, imgHikers, imgMountains, navAbout, navCoaching, tagline } = landing;
   const [showtagline, setShowTagline] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -75,16 +67,7 @@ const Landing = () => {
         </Container>
       </section>
       <section id="cta">
-        <Link to="coaching" smooth duration={1000}>
-          <Fade bottom duration={1000} delay={4000} distance="30px">
-            <div className="corner-card">
-              <div className="cta-text">
-                <h1 className="skew">{cta1}</h1>
-                <h1 className="skew">{cta2}</h1>
-              </div>
-            </div>
-          </Fade>
-        </Link>
+        <Prompt linkTo="coaching" text={cta} />
       </section>
     </div>
   );

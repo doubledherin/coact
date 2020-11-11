@@ -7,8 +7,7 @@ export const headContent = {
 export const landingContent = {
   companyName: 'co.act',
   tagline: 'LET\u2019S GO BEYOND',
-  cta1: 'ARE YOU A PASSENGER',
-  cta2: 'OR A PILOT?',
+  cta: 'ARE YOU A PASSENGER\nOR A PILOT?',
   imgMountains: 'Mountain.png',
   imgHikers: 'Hikers.png',
   navCoaching: 'COACHING',
@@ -25,6 +24,19 @@ export const coachingContent = {
   paragraphThree:
     'When change at some point is necessary, where are you going to, growing and moving forward?',
   subheading: 'What change do you really want to create?',
+};
+
+export const excusesContent = {
+  cta: 'PHILOSOPHY & APPROACH',
+  img: 'MountainToClimb.jpeg',
+  paragraphOne:
+    'What you resist, persists. Shifting a perspective does not come naturally without stirring it up and not sliding back to your own pattern. What could help is someone to mirror you, to raise questions that you did not ask yourself yet, and to be there when courage and support is needed.',
+  paragraphTwo:
+    'This is where coaching comes in. The coach is a sparring partner and co-traveller of your journey of change.',
+  businessmanImg: 'BusinessMan.jpeg',
+  businessmanAlt: 'businessman',
+  mountainImg: 'Path.jpeg',
+  mountainAlt: 'mountain',
 };
 
 export const philosophyContent = {
