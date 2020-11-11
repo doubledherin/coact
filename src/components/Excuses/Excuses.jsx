@@ -35,7 +35,7 @@ const Excuses = () => {
   return (
     <section id="excuses" className="page">
       <Row>
-        <Col className="excuses-left" md={6} sm={12}>
+        <Col className="left" md={6} sm={12}>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <div className="text">
               <p>{paragraphOne}</p>
@@ -52,7 +52,7 @@ const Excuses = () => {
             />
           </Fade>
         </Col>
-        <Col className="excuses-right" md={6} sm={12}>
+        <Col className="right" md={6} sm={12}>
           <Fade bottom duration={1000} delay={600} distance="30px">
             <FluidImage alt={mountainAlt} filename={mountainImg} />
           </Fade>

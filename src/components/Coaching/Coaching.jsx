@@ -23,9 +23,9 @@ const Coaching = () => {
   }, []);
 
   return (
-    <section id="coaching" className="page">
-      <Row>
-        <Col md={6} sm={12} className="coaching-left">
+    <section id="coaching">
+      <Row className="page">
+        <Col md={6} sm={12} className="left">
           <Fade bottom duration={1000} delay={600} distance="30px">
             <FluidImage
               className="image"
@@ -37,7 +37,7 @@ const Coaching = () => {
           </Fade>
           <Prompt linkTo="excuses" text={cta} />
         </Col>
-        <Col md={6} sm={12} className="coaching-right">
+        <Col md={6} sm={12} className="right">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <p>{paragraphOne}</p>
             <h3>{subheading}</h3>

@@ -38,7 +38,7 @@ const Philosophy = () => {
   return (
     <section id="philosophy" className="page">
       <Row>
-        <Col className="philosophy-left" md={6} sm={12}>
+        <Col className="left" md={6} sm={12}>
           <Fade bottom duration={1000} delay={600} distance="30px">
             <FluidImage alt={alt} filename={img} />
           </Fade>
@@ -47,7 +47,7 @@ const Philosophy = () => {
           </Fade>
           <Prompt linkTo="considering" text={cta} />
         </Col>
-        <Col className="philosophy-right" md={6} sm={12}>
+        <Col className="right" md={6} sm={12}>
           <Fade left duration={1000} delay={1300} distance="30px">
             <p>{paragraphOne}</p>
             <h3>{subheadOne}</h3>

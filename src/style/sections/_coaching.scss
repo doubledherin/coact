@@ -1,5 +1,9 @@
 #coaching {
-  .coaching-left {
+  .left {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    height: 100vh;
     .text {
       text-align: center;
     }
@@ -11,12 +15,12 @@
     }
   }
 
-  .coaching-right {
+  .right {
     background-color: $coact-green;
     padding: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
     height: 100vh;
     @include respond(phone) {
       justify-content: flex-start;

@@ -35,10 +35,24 @@ body {
 
 body .page {
   height: 100vh;
-  padding: 0;
 }
 
-body .page .row {
+body .row {
+  margin: 40px;
+}
+
+body .row .left,
+body .row .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -408,44 +422,38 @@ a:hover {
   }
 }
 
-#coaching .coaching-left .text {
+#coaching .left {
+  height: 100vh;
+}
+
+#coaching .left .text {
   text-align: center;
 }
 
 @media (max-width: 37.5em) {
-  #coaching .coaching-left .image {
+  #coaching .left .image {
     height: 20vh;
     margin: 40px 0;
   }
 }
 
-#coaching .coaching-right {
+#coaching .right {
   background-color: #e7f5de;
   padding: 10%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   height: 100vh;
 }
 
 @media (max-width: 37.5em) {
-  #coaching .coaching-right {
+  #coaching .right {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
     padding: 6% 15%;
   }
-  #coaching .coaching-right p {
+  #coaching .right p {
     font-size: 1.6rem;
   }
-  #coaching .coaching-right h3 {
+  #coaching .right h3 {
     font-size: 1.8rem;
   }
 }
@@ -515,15 +523,15 @@ a:hover {
   }
 }
 
-#excuses .excuses-right {
+#excuses .right {
   height: 100vh;
 }
 
-#excuses .excuses-right .prompt {
+#excuses .right .prompt {
   background-color: #c7e4fd;
 }
 
-#philosophy .philosophy-right {
+#philosophy .right {
   background-color: #c7e4fd;
 }
 
@@ -628,115 +636,6 @@ a:hover {
 
 @media (max-width: 37.5em) {
   #about .about-wrapper__info-text--important {
-    display: inline;
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    font-style: normal;
-  }
-}
-
-#testimonials {
-  background-color: #aecaa5;
-  background-image: linear-gradient(135deg, #aecaa5 0%, #b6d3ad 100%);
-  color: white;
-  height: 100%;
-  border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  padding-bottom: 10%;
-}
-
-@media (max-width: 75em) {
-  #testimonials {
-    height: 100%;
-    -webkit-clip-path: none;
-    clip-path: none;
-  }
-}
-
-@media (max-width: 37.5em) {
-  #testimonials .testimonials-wrapper {
-    padding-bottom: 5rem;
-  }
-}
-
-#testimonials .testimonials-wrapper__image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-@media (max-width: 56.25em) {
-  #testimonials .testimonials-wrapper__image {
-    padding-bottom: 6.4rem;
-  }
-}
-
-@media (max-width: 75em) {
-  #testimonials .testimonials-wrapper__image {
-    height: 100%;
-  }
-}
-
-#testimonials .testimonials-wrapper__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-pack: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-@media (max-width: 37.5em) {
-  #testimonials .testimonials-wrapper__info {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-#testimonials .testimonials-wrapper__info-text {
-  text-align: left;
-}
-
-@media (max-width: 56.25em) {
-  #testimonials .testimonials-wrapper__info-text {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 37.5em) {
-  #testimonials .testimonials-wrapper__info-text {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-}
-
-#testimonials .testimonials-wrapper__info-text--important {
-  background: #b3d1aa;
-  display: inline-block;
-  font-style: italic;
-  padding: 0 0.3rem;
-  margin: 0.3rem 0;
-  line-height: 1.6;
-}
-
-@media (max-width: 37.5em) {
-  #testimonials .testimonials-wrapper__info-text--important {
     display: inline;
     margin: 0;
     padding: 0;

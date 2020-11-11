@@ -36,7 +36,7 @@ const Considering = () => {
   return (
     <section id="considering" className="page">
       <Row>
-        <Col md={6} sm={12}>
+        <Col className="left" md={6} sm={12}>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <div>
               <h3>{subheadOne}</h3>
@@ -46,7 +46,7 @@ const Considering = () => {
             </div>
           </Fade>
         </Col>
-        <Col md={6} sm={12}>
+        <Col className="right" md={6} sm={12}>
           <Fade right duration={1000} delay={1000} distance="30px">
             <FluidImage alt={mountainsAlt} filename={imgMountains} />
           </Fade>
