@@ -37,9 +37,14 @@ const Philosophy = () => {
     <section id="philosophy" className="page">
       <Row>
         <Col className="philosophy-left" md={6} sm={12}>
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-            <p>{quote}</p>
+          <Fade bottom duration={1000} delay={600} distance="30px">
+            <FluidImage alt={alt} filename={img} />
           </Fade>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <p className="quote">{quote}</p>
+          </Fade>
+        </Col>
+        <Col className="philosophy-right" md={6} sm={12}>
           <Fade left duration={1000} delay={1300} distance="30px">
             <p>{paragraphOne}</p>
             <h3>{subheadOne}</h3>
@@ -48,11 +53,6 @@ const Philosophy = () => {
             <p>{paragraphThree}</p>
             <h3>{subheadThree}</h3>
             <p>{paragraphFour}</p>
-          </Fade>
-        </Col>
-        <Col className="philosophy-right" md={6} sm={12}>
-          <Fade bottom duration={1000} delay={600} distance="30px">
-            <FluidImage alt={alt} filename={img} />
           </Fade>
         </Col>
       </Row>

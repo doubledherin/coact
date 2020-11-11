@@ -126,6 +126,10 @@ h3 {
   font-size: 2rem;
 }
 
+.quote {
+  font-family: 'Sen', sans-serif;
+}
+
 p {
   padding: 10px 0;
 }
@@ -521,12 +525,8 @@ a:hover {
   background-color: #c7e4fd;
 }
 
-#philosophy .container {
-  max-width: 1240px;
-}
-
-#philosophy .container .philosophy-left .text {
-  padding-right: 150px;
+#philosophy .philosophy-right {
+  background-color: #c7e4fd;
 }
 
 #about {
