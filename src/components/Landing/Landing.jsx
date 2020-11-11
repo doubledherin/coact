@@ -1,16 +1,16 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import { Fade, Zoom } from 'react-reveal';
-import { Link } from 'react-scroll';
 
 import ContentContext from '../../contexts/content';
 import FluidImage from '../Image/FluidImage';
 import FixedImage from '../Image/FixedImage';
+import NavBar from '../NavBar/NavBar';
 import Prompt from '../common/Prompt';
 
 const Landing = () => {
   const { landing } = useContext(ContentContext);
-  const { companyName, cta, imgHikers, imgMountains, navAbout, navCoaching, tagline } = landing;
+  const { companyName, cta, imgHikers, imgMountains, tagline } = landing;
   const [showtagline, setShowTagline] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -38,20 +38,7 @@ const Landing = () => {
             <h2 className="tagline">{tagline}</h2>
           </Fade>
         </div>
-        {isDesktop && (
-          <>
-            <Fade top duration={800} delay={4000} distance="30px">
-              <Link to="coaching" smooth duration={1000}>
-                <h2 className="nav-item skew">{navCoaching}</h2>
-              </Link>
-            </Fade>
-            <Fade top duration={800} delay={4000} distance="30px">
-              <Link to="about" smooth duration={1000}>
-                <h2 className="nav-item skew">{navAbout}</h2>
-              </Link>
-            </Fade>
-          </>
-        )}
+        {isDesktop && <NavBar navItems={['COACHING', 'ABOUT']} />}
       </section>
       <section id="images">
         <Container className="jumbotron">
