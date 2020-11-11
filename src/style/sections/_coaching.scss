@@ -4,6 +4,15 @@
     align-items: center;
   }
 
+  .coaching-left {
+    .image {
+      @include respond(phone) {
+        height: 20vh;
+        margin: 40px 0;
+      }  
+    }
+  }
+
   .coaching-right {
     background-color: $coact-green;
     padding: 10%;
@@ -11,6 +20,16 @@
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    @include respond(phone) {
+      justify-content: flex-start;
+      padding: 6% 15%;
+      p {
+        font-size: 1.6rem;
+      }
+      h3 {
+        font-size: 1.8rem;
+      }
+    }  
   }
 
   .coaching-wrapper {

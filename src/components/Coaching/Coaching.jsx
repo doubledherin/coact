@@ -1,6 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Row, Col } from 'react-bootstrap';
+import { Link } from 'react-scroll';
+
 import FluidImage from '../Image/FluidImage';
 import ContentContext from '../../contexts/content';
 
@@ -25,8 +27,9 @@ const Coaching = () => {
       <Row>
         <Col md={6} sm={12} className="coaching-left">
           <Fade bottom duration={1000} delay={600} distance="30px">
-            <div className="image">
+            <div>
               <FluidImage
+                className="image"
                 imgStyle={{ objectFit: 'contain' }}
                 style={{ maxHeight: '50vh' }}
                 alt="person looking out window"
@@ -42,6 +45,15 @@ const Coaching = () => {
             <p>{paragraphTwo}</p>
             <p>{paragraphThree}</p>
           </Fade>
+          <Link to="philosophy" smooth duration={1000}>
+            <Fade bottom duration={1000} delay={4000} distance="30px">
+              <div className="corner-card">
+                <div className="cta-text">
+                  <h1 className="skew">STRONGER THAN EXCUSES</h1>
+                </div>
+              </div>
+            </Fade>
+          </Link>
         </Col>
       </Row>
     </section>

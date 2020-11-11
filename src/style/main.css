@@ -515,6 +515,13 @@ a:hover {
   align-items: center;
 }
 
+@media (max-width: 37.5em) {
+  #coaching .coaching-left .image {
+    height: 20vh;
+    margin: 40px 0;
+  }
+}
+
 #coaching .coaching-right {
   background-color: #e7f5de;
   padding: 10%;
@@ -529,6 +536,21 @@ a:hover {
   -ms-flex-pack: center;
   justify-content: center;
   height: 100vh;
+}
+
+@media (max-width: 37.5em) {
+  #coaching .coaching-right {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 6% 15%;
+  }
+  #coaching .coaching-right p {
+    font-size: 1.6rem;
+  }
+  #coaching .coaching-right h3 {
+    font-size: 1.8rem;
+  }
 }
 
 @media (max-width: 37.5em) {
