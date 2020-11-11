@@ -29,7 +29,7 @@ export const coachingContent = {
 };
 
 export const excusesContent = {
-  cta: 'PHILOSOPHY & APPROACH',
+  cta: 'PHILOSOPHY &\nAPPROACH',
   img: 'MountainToClimb.jpeg',
   paragraphOne:
     'What you resist, persists. Shifting a perspective does not come naturally without stirring it up and not sliding back to your own pattern. What could help is someone to mirror you, to raise questions that you did not ask yourself yet, and to be there when courage and support is needed.',

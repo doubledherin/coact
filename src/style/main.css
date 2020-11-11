@@ -58,7 +58,7 @@ body .prompt {
   bottom: 0;
   right: 0;
   height: 20vh;
-  width: 50vw;
+  width: 100%;
 }
 
 @media (max-width: 56.25em) {
@@ -374,6 +374,7 @@ a:hover {
 
 #landing #cta .prompt {
   background-color: #e7f5de;
+  width: 50vw;
 }
 
 #landing #images {

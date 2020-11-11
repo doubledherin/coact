@@ -19,7 +19,6 @@ body {
       justify-content: center;
       height: 100vh;
       padding: 0 8%;
-
     }
   }
 
@@ -28,7 +27,7 @@ body {
     bottom: 0;
     right: 0;
     height: 20vh;
-    width: 50vw;
+    width: 100%;
 
     @include respond(tab-port) {
       width: 100vw;
