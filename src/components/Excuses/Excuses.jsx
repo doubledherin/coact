@@ -37,7 +37,7 @@ const Excuses = () => {
       <Row>
         <Col className="left" md={6} sm={12}>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-            <div className="text">
+            <div>
               <p>{paragraphOne}</p>
               <p>{paragraphTwo}</p>
             </div>

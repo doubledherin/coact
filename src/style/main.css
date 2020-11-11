@@ -465,10 +465,6 @@ a:hover {
   }
 }
 
-#excuses .right {
-  height: 100vh;
-}
-
 #excuses .right .prompt {
   background-color: #c7e4fd;
 }
