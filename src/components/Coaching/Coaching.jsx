@@ -40,7 +40,9 @@ const Coaching = () => {
         <Col md={6} sm={12} className="right">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <p>{paragraphOne}</p>
-            <h3>{subheading}</h3>
+            <h3>
+              <strong>{subheading}</strong>
+            </h3>
             <p>{paragraphTwo}</p>
             <p>{paragraphThree}</p>
           </Fade>

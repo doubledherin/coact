@@ -28,9 +28,7 @@
         }
       }
       .tagline {
-        font-weight: 700;
         font-size: 1.6rem;
-        letter-spacing: 0.1rem;
         @include respond(tab-land) {
           font-size: 1.3rem;
         }
@@ -40,10 +38,8 @@
       }
     }
     .nav-item {
-      font-weight: 700;
-      padding-left: 300px;
+      padding-left: 120px;
       font-size: 1.6rem;
-      letter-spacing: 0.1rem;
       @include respond(tab-land) {
         padding-left: 100px;
       }
