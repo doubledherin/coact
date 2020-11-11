@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Row, Col } from 'react-bootstrap';
 
+import Prompt from '../common/Prompt';
 import FluidImage from '../Image/FluidImage';
 import ContentContext from '../../contexts/content';
 
@@ -9,6 +10,7 @@ const Philosophy = () => {
   const { philosophy } = useContext(ContentContext);
   const {
     alt,
+    cta,
     img,
     quote,
     paragraphOne,
@@ -43,6 +45,7 @@ const Philosophy = () => {
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <p className="quote">{quote}</p>
           </Fade>
+          <Prompt linkTo="considering" text={cta} />
         </Col>
         <Col className="philosophy-right" md={6} sm={12}>
           <Fade left duration={1000} delay={1300} distance="30px">

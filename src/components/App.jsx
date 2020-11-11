@@ -48,8 +48,8 @@ function App() {
       <Coaching />
       <Excuses />
       <Philosophy />
-      <Testimonials />
       <Considering />
+      <Testimonials />
       <About />
       <Contact />
       <Footer />

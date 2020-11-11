@@ -1,8 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Row, Col } from 'react-bootstrap';
-import Prompt from '../common/Prompt';
 
+import Prompt from '../common/Prompt';
 import FixedImage from '../Image/FixedImage';
 import FluidImage from '../Image/FluidImage';
 import ContentContext from '../../contexts/content';

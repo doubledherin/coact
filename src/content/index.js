@@ -40,6 +40,7 @@ export const excusesContent = {
 };
 
 export const philosophyContent = {
+  cta: 'CONSIDERING',
   img: 'MountainToClimb.png',
   alt: 'Person climbing mountain without tools.',
   quote:
@@ -58,6 +59,8 @@ export const philosophyContent = {
 };
 
 export const consideringContent = {
+  imgMountains: 'Mountain.png',
+  imgHikers: 'Hikers.png',
   subheadOne: 'Before getting started',
   subheadTwo: 'Coaching package',
   paragraphOne:

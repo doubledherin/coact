@@ -1,13 +1,22 @@
 import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
-import { Container, Row, Col } from 'react-bootstrap';
-import Title from '../Title/Title';
+import { Row, Col } from 'react-bootstrap';
+
 import FixedImage from '../Image/FixedImage';
+
+import FluidImage from '../Image/FluidImage';
 import ContentContext from '../../contexts/content';
 
 const Considering = () => {
   const { considering } = useContext(ContentContext);
-  const { img, paragraphOne, paragraphTwo, subheadOne, subheadTwo } = considering;
+  const {
+    imgMountains,
+    imgHikers,
+    paragraphOne,
+    paragraphTwo,
+    subheadOne,
+    subheadTwo,
+  } = considering;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -23,29 +32,27 @@ const Considering = () => {
   }, []);
 
   return (
-    <section id="philosophy">
-      <Container>
-        <Title title="Considering" />
-        <Row className="about-wrapper">
-          <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
-              <div className="about-wrapper__image">
-                <FixedImage alt="profile picture" filename={img} />
-              </div>
-            </Fade>
-          </Col>
-          <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-              <div className="about-wrapper__info">
-                <h3>{subheadOne}</h3>
-                <p className="about-wrapper__info-text">{paragraphOne}</p>
-                <h3>{subheadTwo}</h3>
-                <p className="about-wrapper__info-text">{paragraphTwo}</p>
-              </div>
-            </Fade>
-          </Col>
-        </Row>
-      </Container>
+    <section id="considering" className="page">
+      <Row>
+        <Col md={6} sm={12}>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <div>
+              <h3>{subheadOne}</h3>
+              <p>{paragraphOne}</p>
+              <h3>{subheadTwo}</h3>
+              <p>{paragraphTwo}</p>
+            </div>
+          </Fade>
+        </Col>
+        <Col md={6} sm={12}>
+          <Fade right duration={1000} delay={1000} distance="30px">
+            <FluidImage alt="mountains in the distance" filename={imgMountains} />
+          </Fade>
+          <Fade left duration={1000} delay={1300} distance="30px">
+            <FixedImage className="hikers__image" alt="hikers" filename={imgHikers} />
+          </Fade>
+        </Col>
+      </Row>
     </section>
   );
 };
