@@ -137,7 +137,15 @@ h3 {
 }
 
 .quote {
+  padding-top: 10%;
+  line-height: 4rem;
   font-family: 'Sen', sans-serif;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.quote::first-letter {
+  font-size: 130%;
 }
 
 p {
@@ -469,8 +477,39 @@ a:hover {
   background-color: #c7e4fd;
 }
 
+#philosophy .left .prompt .text {
+  text-align: center;
+}
+
 #philosophy .right {
   background-color: #c7e4fd;
+}
+
+#considering .row .right {
+  padding-left: 0;
+}
+
+#considering .row .right .prompt {
+  background-color: #e4f6f6;
+}
+
+#testimonials .row .left {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-bottom: 12%;
+}
+
+#testimonials .row .left .prompt {
+  text-align: center;
+}
+
+#testimonials .row .right {
+  background-color: #e4f6f6;
+}
+
+#testimonials .row .right .attribution {
+  text-align: right;
 }
 
 #about {

@@ -1,2 +1,17 @@
 #testimonials {
+  .row {
+    .left {
+      justify-content: flex-end;
+      padding-bottom: 12%;
+      .prompt {
+        text-align: center;
+      }
+    }
+    .right {
+      background-color: $coact-light-blue;
+      .attribution {
+        text-align: right;
+      }
+    }
+  }
 }

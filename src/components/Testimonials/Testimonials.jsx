@@ -42,8 +42,12 @@ const Testimonials = () => {
         </Col>
         <Col md={6} sm={12} className="right">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-            <p>{text1}</p>
-            <p>{attribution1}</p>
+            <div>
+              <p className="testimonial">
+                <i>{text1}</i>
+              </p>
+              <p className="attribution">{attribution1}</p>
+            </div>
           </Fade>
         </Col>
       </Row>

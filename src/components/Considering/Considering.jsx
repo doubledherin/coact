@@ -2,8 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Row, Col } from 'react-bootstrap';
 
+import Prompt from '../common/Prompt';
 import FixedImage from '../Image/FixedImage';
-
 import FluidImage from '../Image/FluidImage';
 import ContentContext from '../../contexts/content';
 
@@ -51,8 +51,14 @@ const Considering = () => {
             <FluidImage alt={mountainsAlt} filename={imgMountains} />
           </Fade>
           <Fade left duration={1000} delay={1300} distance="30px">
-            <FixedImage alt={hikersAlt} filename={imgHikers} />
+            <FixedImage
+              imgStyle={{ objectFit: 'contain' }}
+              style={{ float: 'right', margin: '5%', height: '80px' }}
+              alt={hikersAlt}
+              filename={imgHikers}
+            />
           </Fade>
+          <Prompt linkTo="testimonials" text="CLIENT RESONANCES" />
         </Col>
       </Row>
     </section>
