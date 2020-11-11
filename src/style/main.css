@@ -37,10 +37,6 @@ body .page {
   height: 100vh;
 }
 
-body .row {
-  margin: 40px;
-}
-
 body .row .left,
 body .row .right {
   display: -webkit-box;
@@ -147,12 +143,11 @@ h3 {
 p {
   padding: 10px 0;
   font-weight: 300;
-  letter-spacing: 0.03rem;
 }
 
 p,
 a {
-  font-size: 2rem;
+  font-size: 1.9rem;
 }
 
 a,
@@ -207,7 +202,7 @@ a:hover {
 .cta-btn {
   display: inline-block;
   position: relative;
-  padding: 0.8rem 2rem;
+  padding: 0.8rem 1.9rem;
   font-weight: bold;
   line-height: 1;
   z-index: 1;
@@ -465,6 +460,10 @@ a:hover {
   }
 }
 
+#excuses .right {
+  padding: 0;
+}
+
 #excuses .right .prompt {
   background-color: #c7e4fd;
 }
@@ -667,7 +666,7 @@ a:hover {
 
 .back-to-top i {
   color: black;
-  margin: 1rem 0 2rem;
+  margin: 1rem 0 1.9rem;
   -webkit-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
   cursor: pointer;

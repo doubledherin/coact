@@ -45,7 +45,7 @@ const Excuses = () => {
           <Fade left duration={1000} delay={1300} distance="30px">
             <FixedImage
               imgStyle={{ objectFit: 'contain' }}
-              style={{ height: '120px', marginTop: '80px' }}
+              style={{ height: '120px', marginTop: '80px', width: '35vw' }}
               className="image"
               alt={businessmanAlt}
               filename={businessmanImg}
