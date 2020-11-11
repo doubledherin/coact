@@ -36,7 +36,7 @@ const Landing = () => {
   }, []);
 
   return (
-    <div id="landing">
+    <div id="landing" className="page">
       <section id="header">
         <div className="logo">
           <Fade top cascade duration={300} delay={500} distance="130px">
@@ -76,7 +76,7 @@ const Landing = () => {
       </section>
       <section id="cta">
         <Link to="coaching" smooth duration={1000}>
-          <Fade right duration={1000} delay={4000} distance="30px">
+          <Fade bottom duration={1000} delay={4000} distance="30px">
             <div className="corner-card">
               <div className="cta-text">
                 <h1 className="skew">{cta1}</h1>

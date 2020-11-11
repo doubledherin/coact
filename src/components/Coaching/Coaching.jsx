@@ -29,7 +29,7 @@ const Coaching = () => {
   }, []);
 
   return (
-    <section id="coaching">
+    <section id="coaching" className="page">
       <Row>
         <Col md={6} sm={12} className="coaching-left">
           <Fade bottom duration={1000} delay={600} distance="30px">
