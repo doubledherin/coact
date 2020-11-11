@@ -40,15 +40,21 @@ export const excusesContent = {
 };
 
 export const philosophyContent = {
-  img: 'MountainToClimb.jpeg',
+  img: 'MountainToClimb.png',
+  alt: 'Person climbing mountain without tools.',
+  quote:
+    'COACHING IS AN EXPLORATION OF WHO YOU ARE TODAY, WHAT YOU ARE WILLING TO ACT TO GET WHERE YOU WANT TO BE TOMORROW.',
   paragraphOne:
-    'What you resist, persists. Shifting a perspective does not come naturally without stirring it up and not sliding back to your own pattern. What could help is someone to mirror you, to raise questions that you did not ask yourself yet, and to be there when courage and support is needed.',
+    'My coaching is an invitation for a deep change toward fulfilling potential. Accessing to your natural creativity and resourcefulness will turn aspirations to reality.',
   paragraphTwo:
-    'This is where coaching comes in. The coach is a sparring partner and co-traveller of your journey of change.',
-  businessmanImg: 'BusinessMan.jpeg',
-  businessmanAlt: 'businessman',
-  mountainImg: 'Path.jpeg',
-  mountainAlt: 'mountain',
+    'A coaching process usually begins with an exploration of who you are, who you wish to be and what you want to create. Your fulfilling vision will serve as a your north star to navigate through. Crafting a roadmap will support you to follow up your experiment and practices.',
+  paragraphThree:
+    'Straightforward conversation with inquiries exposes what is underneath your struggles, reveals your (hidden) values and underlines what really matters to you. Improvisation, playfulness and light meditation open up exploration and go beyond your boundary. Brainstorming, actions learning and experimental practices help to develop new skills and behavior. ',
+  paragraphFour:
+    'You are most likely experiencing self-awareness, connection to your inner knowing, power of choice and appreciation. You will also be able to see through what is happening, aligning your life values and triggering pattern interruptions. This will create room for your resilience and authenticity to show up.',
+  subheadOne: 'From self-discovery to envisioning',
+  subheadTwo: 'Exploring and going beyond',
+  subheadThree: 'Experiencing',
 };
 
 export const consideringContent = {
