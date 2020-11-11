@@ -40,7 +40,6 @@ body {
   }
   .text {
     padding: 50px 100px;
-    white-space: pre-wrap;
     @include respond(tab-port) {
       text-align: center;
       margin-left: 0;

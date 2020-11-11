@@ -83,6 +83,11 @@ export const testimonialsContent = {
 
 export const aboutContent = {
   img: 'profile-drawing.png',
+  alt: 'self-portrait of Thelan Nguyen',
+  name: 'Thelan Nguyen',
+  accreditation: 'ICF Accredited Coach\nwith Co-Active® Training Institute',
+  linkedIn: 'linkedin.com/in/thelan',
+  xing: 'xing.com/profile/thelan_nguyen',
   paragraphOne:
     'In a small neighborhood of Saigon, a group of kids ran to be the first. Neither winning nor running interested me, staying aside became a habit. The past had to hide, survival was the present, and the future felt liked a dark hole. Mixture of being poor and fear, escape postulated as alternative. That is how the world presented itself to me',
   paragraphTwo:

@@ -6,7 +6,18 @@ import ContentContext from '../../contexts/content';
 
 const About = () => {
   const { about } = useContext(ContentContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, paragraphFour } = about;
+  const {
+    alt,
+    img,
+    name,
+    accreditation,
+    linkedIn,
+    xing,
+    paragraphOne,
+    paragraphTwo,
+    paragraphThree,
+    paragraphFour,
+  } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -23,21 +34,29 @@ const About = () => {
 
   return (
     <section id="about">
-      <Row className="about-wrapper">
-        <Col md={6} sm={12}>
-          <Fade bottom duration={1000} delay={600} distance="30px">
-            <div className="about-wrapper__image">
-              <FixedImage alt="profile picture" filename={img} />
-            </div>
+      <Row>
+        <Col md={6} sm={12} className="left">
+          <Fade left duration={1000} delay={600} distance="30px">
+            <FixedImage alt={alt} filename={img} />
+          </Fade>
+          <Fade left duration={1000} delay={1000} distance="30px">
+            <h3>{name}</h3>
+          </Fade>
+          <Fade right duration={1000} delay={1000} distance="30px">
+            <p>{accreditation}</p>
+          </Fade>
+          <Fade bottom duration={1000} delay={1000} distance="30px">
+            <p className="social">{linkedIn}</p>
+            <p className="social">{xing}</p>
           </Fade>
         </Col>
-        <Col md={6} sm={12}>
+        <Col md={6} sm={12} className="right">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-            <div className="about-wrapper__info">
-              <p className="about-wrapper__info-text">{paragraphOne}</p>
-              <p className="about-wrapper__info-text">{paragraphTwo}</p>
-              <p className="about-wrapper__info-text">{paragraphThree}</p>
-              <p className="about-wrapper__info-text">{paragraphFour}</p>
+            <div>
+              <p>{paragraphOne}</p>
+              <p>{paragraphTwo}</p>
+              <p>{paragraphThree}</p>
+              <p>{paragraphFour}</p>
             </div>
           </Fade>
         </Col>

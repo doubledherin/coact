@@ -77,7 +77,6 @@ body .prompt {
 
 body .text {
   padding: 50px 100px;
-  white-space: pre-wrap;
 }
 
 @media (max-width: 56.25em) {
@@ -122,6 +121,7 @@ body .skew:active {
 html,
 body {
   font-family: 'Inter', sans-serif;
+  white-space: pre-wrap;
 }
 
 h1 {
@@ -511,6 +511,19 @@ a:hover {
 #testimonials .row .right .prompt {
   text-align: center;
   background-color: white;
+}
+
+#about .left {
+  padding-left: 15%;
+}
+
+#about .left .social {
+  padding: 0;
+  margin: 0;
+}
+
+#about .right {
+  padding-left: 3%;
 }
 
 .footer {
