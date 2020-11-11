@@ -17,8 +17,6 @@ export const landingContent = {
 
 export const coachingContent = {
   img: 'LookingOutAirplaneWindow.png',
-  heading1: 'ARE YOU A PASSENGER',
-  heading2: 'OR A PILOT?',
   paragraphOne:
     'Feeling stuck is a wake up call for redirection. There is no shortcut for getting a clarity what really matters and going for it.',
   paragraphTwo:

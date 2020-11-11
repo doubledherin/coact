@@ -6,15 +6,7 @@ import ContentContext from '../../contexts/content';
 
 const Coaching = () => {
   const { coaching } = useContext(ContentContext);
-  const {
-    heading1,
-    heading2,
-    subheading,
-    img,
-    paragraphOne,
-    paragraphTwo,
-    paragraphThree,
-  } = coaching;
+  const { subheading, img, paragraphOne, paragraphTwo, paragraphThree } = coaching;
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -33,16 +25,17 @@ const Coaching = () => {
       <Row>
         <Col md={6} sm={12} className="coaching-left">
           <Fade bottom duration={1000} delay={600} distance="30px">
-            <div className="">
-              <FluidImage alt="person looking out window" filename={img} />
+            <div className="image">
+              <FluidImage
+                imgStyle={{ objectFit: 'contain' }}
+                style={{ maxHeight: '50vh' }}
+                alt="person looking out window"
+                filename={img}
+              />
             </div>
           </Fade>
         </Col>
         <Col md={6} sm={12} className="coaching-right">
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-            <h1>{heading1}</h1>
-            <h1>{heading2}</h1>
-          </Fade>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <p>{paragraphOne}</p>
             <h3>{subheading}</h3>

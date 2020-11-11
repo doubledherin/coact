@@ -23,7 +23,7 @@ const Philosophy = () => {
   }, []);
 
   return (
-    <section id="philosophy">
+    <section id="philosophy" className="page">
       <Container>
         <Title title="Philosophy & Approach" />
         <Row className="about-wrapper">

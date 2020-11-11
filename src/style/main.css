@@ -238,60 +238,6 @@ a:hover {
   color: #272727;
 }
 
-.footer {
-  background-color: white;
-  color: black;
-  padding: 4.8rem 0;
-}
-
-@media (max-width: 37.5em) {
-  .footer {
-    border: 0px;
-  }
-}
-
-.footer__text {
-  color: black;
-  font-size: 1.3rem;
-}
-
-.footer__text a {
-  color: black;
-  font-size: 1.3rem;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  display: inline-block;
-  background-color: white;
-}
-
-.footer__text a:hover,
-.footer__text a:active {
-  color: #aecaa5;
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-}
-
-.footer hr {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: 0;
-  width: 50%;
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
-}
-
-.back-to-top i {
-  color: black;
-  margin: 1rem 0 1.8rem;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  cursor: pointer;
-}
-
-.back-to-top i:hover {
-  -webkit-transform: translateY(-2px);
-  transform: translateY(-2px);
-}
-
 #landing #header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,39 +508,32 @@ a:hover {
   }
 }
 
+#coaching .row {
+  height: 100vh;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
 #coaching .coaching-right {
   background-color: #e7f5de;
-  padding: 80px;
+  padding: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 @media (max-width: 37.5em) {
   #coaching .coaching-wrapper {
     padding-bottom: 5rem;
-  }
-}
-
-#coaching .coaching-wrapper__image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-@media (max-width: 56.25em) {
-  #coaching .coaching-wrapper__image {
-    padding-bottom: 6.4rem;
-  }
-}
-
-@media (max-width: 75em) {
-  #coaching .coaching-wrapper__image {
-    height: 100%;
   }
 }
 
@@ -806,5 +745,59 @@ a:hover {
   #contact .contact-wrapper a {
     font-size: 2rem;
   }
+}
+
+.footer {
+  background-color: white;
+  color: black;
+  padding: 4.8rem 0;
+}
+
+@media (max-width: 37.5em) {
+  .footer {
+    border: 0px;
+  }
+}
+
+.footer__text {
+  color: black;
+  font-size: 1.3rem;
+}
+
+.footer__text a {
+  color: black;
+  font-size: 1.3rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  display: inline-block;
+  background-color: white;
+}
+
+.footer__text a:hover,
+.footer__text a:active {
+  color: #aecaa5;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.footer hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  width: 50%;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.back-to-top i {
+  color: black;
+  margin: 1rem 0 1.8rem;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+
+.back-to-top i:hover {
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 /*# sourceMappingURL=main.css.map */
