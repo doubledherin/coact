@@ -53,7 +53,13 @@ const Landing = () => {
             <FluidImage alt={mountainsAlt} filename={imgMountains} />
           </Fade>
           <Fade left duration={1000} delay={1300} distance="30px">
-            <FixedImage className="hikers__image" alt={hikersAlt} filename={imgHikers} />
+            <FixedImage
+              imgStyle={{ objectFit: 'contain' }}
+              style={{ height: '100px', marginTop: '80px' }}
+              className="hikers__image"
+              alt={hikersAlt}
+              filename={imgHikers}
+            />
           </Fade>
           <Zoom bottom opposite when={showtagline} duration={2000}>
             <h2 className="tagline">{tagline}</h2>
