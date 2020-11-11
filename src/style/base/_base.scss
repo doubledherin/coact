@@ -14,7 +14,34 @@ body {
 
     .row {
       height: 100vh;
-      align-items: center;
+    }
+  }
+
+
+  .prompt {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20vh;
+    width: 50vw;
+    float: right;
+    border-radius: 15px 0 0 0;
+
+    @include respond(tab-port) {
+      width: 100vw;
+      height: 40vh;
+    }  
+    @include respond(phone) {
+      width: 100vw;
+      height: 20vh;
+    }  
+  }
+  .text {
+    padding: 50px;
+    white-space: pre-wrap;
+    @include respond(tab-port) {
+      text-align: center;
+      margin-left: 0;
     }
   }
 

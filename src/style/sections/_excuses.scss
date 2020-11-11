@@ -1,10 +1,8 @@
 #excuses {
-  .container {
-    max-width: 1240px;
-    .excuses-left {
-      .text {
-        padding-right: 150px;
-      }
+  .excuses-right {
+    height: 100vh;
+    .prompt {
+      background-color: $coact-blue;
     }
   }
 }

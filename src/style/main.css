@@ -40,9 +40,42 @@ body .page {
 
 body .page .row {
   height: 100vh;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+}
+
+body .prompt {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 20vh;
+  width: 50vw;
+  float: right;
+  border-radius: 15px 0 0 0;
+}
+
+@media (max-width: 56.25em) {
+  body .prompt {
+    width: 100vw;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 37.5em) {
+  body .prompt {
+    width: 100vw;
+    height: 20vh;
+  }
+}
+
+body .text {
+  padding: 50px;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 56.25em) {
+  body .text {
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
 body .skew {
@@ -319,6 +352,10 @@ a:hover {
   }
 }
 
+#landing #cta .prompt {
+  background-color: #e7f5de;
+}
+
 #landing #images .hikers__image {
   margin-left: 100px;
 }
@@ -369,46 +406,8 @@ a:hover {
   }
 }
 
-#landing #cta .corner-card {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 20vh;
-  width: 50vw;
-  background-color: #e7f5de;
-  float: right;
-  border-radius: 15px 0 0 0;
-}
-
-@media (max-width: 56.25em) {
-  #landing #cta .corner-card {
-    width: 100vw;
-    height: 40vh;
-  }
-}
-
-@media (max-width: 37.5em) {
-  #landing #cta .corner-card {
-    width: 100vw;
-    height: 20vh;
-  }
-}
-
-#landing #cta .cta-text {
-  margin-left: 15%;
-  margin-top: 5%;
-  white-space: pre-wrap;
-}
-
-@media (max-width: 56.25em) {
-  #landing #cta .cta-text {
-    text-align: center;
-    margin-left: 0;
-  }
-}
-
-#coaching .coaching-left {
-  margin-top: 100px;
+#coaching .coaching-left .text {
+  text-align: center;
 }
 
 @media (max-width: 37.5em) {
@@ -416,11 +415,6 @@ a:hover {
     height: 20vh;
     margin: 40px 0;
   }
-}
-
-#coaching .coaching-left .cta-text {
-  text-align: center;
-  padding-top: 100px;
 }
 
 #coaching .coaching-right {
@@ -519,12 +513,12 @@ a:hover {
   }
 }
 
-#excuses .container {
-  max-width: 1240px;
+#excuses .excuses-right {
+  height: 100vh;
 }
 
-#excuses .container .excuses-left .text {
-  padding-right: 150px;
+#excuses .excuses-right .prompt {
+  background-color: #c7e4fd;
 }
 
 #philosophy .container {
