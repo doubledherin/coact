@@ -54,6 +54,7 @@ body .row .right {
   -ms-flex-pack: center;
   justify-content: center;
   height: 100vh;
+  padding: 0 8%;
 }
 
 body .prompt {
@@ -433,10 +434,6 @@ a:hover {
   }
 }
 
-#coaching .left {
-  height: 100vh;
-}
-
 #coaching .left .text {
   text-align: center;
 }
@@ -450,8 +447,6 @@ a:hover {
 
 #coaching .right {
   background-color: #e7f5de;
-  padding: 10%;
-  height: 100vh;
 }
 
 @media (max-width: 37.5em) {
@@ -466,71 +461,6 @@ a:hover {
   }
   #coaching .right h3 {
     font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 37.5em) {
-  #coaching .coaching-wrapper {
-    padding-bottom: 5rem;
-  }
-}
-
-#coaching .coaching-wrapper__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 100%;
-  -webkit-box-pack: left;
-  -ms-flex-pack: left;
-  justify-content: left;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-@media (max-width: 37.5em) {
-  #coaching .coaching-wrapper__info {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-}
-
-#coaching .coaching-wrapper__info-text {
-  text-align: left;
-}
-
-@media (max-width: 56.25em) {
-  #coaching .coaching-wrapper__info-text {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-}
-
-@media (max-width: 37.5em) {
-  #coaching .coaching-wrapper__info-text {
-    font-size: 1.6rem;
-    text-align: center;
-  }
-}
-
-#coaching .coaching-wrapper__info-text--important {
-  background: #b3d1aa;
-  display: inline-block;
-  font-style: italic;
-  padding: 0 0.3rem;
-  margin: 0.3rem 0;
-  line-height: 1.6;
-}
-
-@media (max-width: 37.5em) {
-  #coaching .coaching-wrapper__info-text--important {
-    display: inline;
-    margin: 0;
-    padding: 0;
-    background: transparent;
-    font-style: normal;
   }
 }
 

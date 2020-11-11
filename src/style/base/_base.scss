@@ -10,7 +10,6 @@ body {
 
   .page {
     height: 100vh;
-
   }
 
   .row {
@@ -21,6 +20,8 @@ body {
       flex-direction: column;
       justify-content: center;
       height: 100vh;
+      padding: 0 8%;
+
     }
   }
 
