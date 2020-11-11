@@ -48,8 +48,6 @@ body .prompt {
   right: 0;
   height: 20vh;
   width: 50vw;
-  float: right;
-  border-radius: 15px 0 0 0;
 }
 
 @media (max-width: 56.25em) {

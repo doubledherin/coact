@@ -1,10 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
-// import Tilt from 'react-tilt';
-import { Container, Row, Col } from 'react-bootstrap';
-import Title from '../Title/Title';
+import { Row, Col } from 'react-bootstrap';
+
+import Prompt from '../common/Prompt';
+import FluidImage from '../Image/FluidImage';
+import ContentContext from '../../contexts/content';
 
 const Testimonials = () => {
+  const { testimonials } = useContext(ContentContext);
+  const { text1, attribution1, img } = testimonials;
+
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -20,59 +25,28 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials">
-      <Container>
-        <div className="testimonials-wrapper">
-          <Title title="Testimonials" />
-          <Row key={1}>
-            <Col lg={14} sm={12}>
-              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-                <div className="testimonials-wrapper__text">
-                  <div>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque,
-                      ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum
-                      consequatur blanditiis inventore debitis fuga numquam voluptate architecto
-                      itaque molestiae.
-                    </p>
-                  </div>
-                </div>
-              </Fade>
-            </Col>
-          </Row>
-          <Row key={2}>
-            <Col lg={14} sm={12}>
-              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-                <div className="testimonials-wrapper__text">
-                  <div>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque,
-                      ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum
-                      consequatur blanditiis inventore debitis fuga numquam voluptate architecto
-                      itaque molestiae.
-                    </p>
-                  </div>
-                </div>
-              </Fade>
-            </Col>
-          </Row>
-          <Row key={3}>
-            <Col lg={14} sm={12}>
-              <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-                <div className="testimonials-wrapper__text">
-                  <div>
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque,
-                      ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum
-                      consequatur blanditiis inventore debitis fuga numquam voluptate architecto
-                      itaque molestiae.
-                    </p>
-                  </div>
-                </div>
-              </Fade>
-            </Col>
-          </Row>
-        </div>
-      </Container>
+      <Row>
+        <Col md={6} sm={12} className="testimonial-left">
+          <Fade bottom duration={1000} delay={600} distance="30px">
+            <div>
+              <FluidImage
+                className="image"
+                imgStyle={{ objectFit: 'contain' }}
+                style={{ maxHeight: '50vh' }}
+                alt="person looking out window"
+                filename={img}
+              />
+            </div>
+          </Fade>
+          <Prompt linkTo="about" text="???" />
+        </Col>
+        <Col md={6} sm={12} className="testimonial-right">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <p>{text1}</p>
+            <p>{attribution1}</p>
+          </Fade>
+        </Col>
+      </Row>
     </section>
   );
 };

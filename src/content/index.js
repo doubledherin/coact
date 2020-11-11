@@ -10,6 +10,8 @@ export const landingContent = {
   cta: 'ARE YOU A PASSENGER\nOR A PILOT?',
   imgMountains: 'Mountain.png',
   imgHikers: 'Hikers.png',
+  hikersAlt: 'two hikers with backpacks',
+  mountainsAlt: 'mountains in the distance',
   navCoaching: 'COACHING',
   navAbout: 'ABOUT',
 };
@@ -59,14 +61,24 @@ export const philosophyContent = {
 };
 
 export const consideringContent = {
+  cta: 'START THE JOURNEY',
   imgMountains: 'Mountain.png',
-  imgHikers: 'Hikers.png',
+  imgHikers: 'HikersFlipped.png',
+  hikersAlt: 'two hikers with backpacks',
+  mountainsAlt: 'mountains in the distance',
   subheadOne: 'Before getting started',
   subheadTwo: 'Coaching package',
   paragraphOne:
     'Ask yourself if you are willing to invest time and energy into the coaching journey. It requires personal commitment. Think through what you can reasonably take on. To get a good idea of what to expect and if we can work together, feel free to contact me for a conversation. Please send me an email to thelan@co-act.space.',
   paragraphTwo:
     'The length of the coaching process and frequency of sessions are determined accordingly with the client. I recommend a package of 8 sessions of 50 minutes over a period of four months to allow a certain level of depth and sustainability. I coach via Zoom, over the phone or inperson.',
+};
+
+export const testimonialsContent = {
+  img: 'ClimbingUp.png',
+  text1:
+    '"It is crazy and scary at the same time, how telling a \u2018small story\u2019 to Thelan ends up with you facing the hard questions of your life and making you having a conscious examination about your personality, your comfort zone and your formerly accepted boundaries. It is a tough path, but the reward is priceless."',
+  attribution1: '\u2014John Doe',
 };
 
 export const aboutContent = {

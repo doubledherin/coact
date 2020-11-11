@@ -12,6 +12,8 @@ const Considering = () => {
   const {
     imgMountains,
     imgHikers,
+    mountainsAlt,
+    hikersAlt,
     paragraphOne,
     paragraphTwo,
     subheadOne,
@@ -46,10 +48,10 @@ const Considering = () => {
         </Col>
         <Col md={6} sm={12}>
           <Fade right duration={1000} delay={1000} distance="30px">
-            <FluidImage alt="mountains in the distance" filename={imgMountains} />
+            <FluidImage alt={mountainsAlt} filename={imgMountains} />
           </Fade>
           <Fade left duration={1000} delay={1300} distance="30px">
-            <FixedImage className="hikers__image" alt="hikers" filename={imgHikers} />
+            <FixedImage alt={hikersAlt} filename={imgHikers} />
           </Fade>
         </Col>
       </Row>

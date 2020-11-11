@@ -27,15 +27,13 @@ const Coaching = () => {
       <Row>
         <Col md={6} sm={12} className="coaching-left">
           <Fade bottom duration={1000} delay={600} distance="30px">
-            <div>
-              <FluidImage
-                className="image"
-                imgStyle={{ objectFit: 'contain' }}
-                style={{ maxHeight: '50vh' }}
-                alt="person looking out window"
-                filename={img}
-              />
-            </div>
+            <FluidImage
+              className="image"
+              imgStyle={{ objectFit: 'contain' }}
+              style={{ maxHeight: '50vh' }}
+              alt="person looking out window"
+              filename={img}
+            />
           </Fade>
           <Prompt linkTo="excuses" text={cta} />
         </Col>

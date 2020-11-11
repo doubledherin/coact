@@ -10,7 +10,7 @@ import Prompt from '../common/Prompt';
 
 const Landing = () => {
   const { landing } = useContext(ContentContext);
-  const { companyName, cta, imgHikers, imgMountains, tagline } = landing;
+  const { companyName, cta, imgHikers, imgMountains, hikersAlt, mountainsAlt, tagline } = landing;
   const [showtagline, setShowTagline] = useState(false);
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -50,10 +50,10 @@ const Landing = () => {
       <section id="images">
         <Container className="jumbotron">
           <Fade right duration={1000} delay={1000} distance="30px">
-            <FluidImage alt="mountains in the distance" filename={imgMountains} />
+            <FluidImage alt={mountainsAlt} filename={imgMountains} />
           </Fade>
           <Fade left duration={1000} delay={1300} distance="30px">
-            <FixedImage className="hikers__image" alt="hikers" filename={imgHikers} />
+            <FixedImage className="hikers__image" alt={hikersAlt} filename={imgHikers} />
           </Fade>
           <Zoom bottom opposite when={showtagline} duration={2000}>
             <h2 className="tagline">{tagline}</h2>

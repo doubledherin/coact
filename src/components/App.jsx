@@ -18,6 +18,7 @@ import {
   excusesContent,
   philosophyContent,
   consideringContent,
+  testimonialsContent,
   contactContent,
 } from '../content';
 
@@ -27,6 +28,7 @@ function App() {
   const [excuses, setExcuses] = useState({});
   const [philosophy, setPhilosophy] = useState({});
   const [considering, setConsidering] = useState({});
+  const [testimonials, setTestimonials] = useState({});
   const [about, setAbout] = useState({});
   const [contact, setContact] = useState({});
 
@@ -36,13 +38,14 @@ function App() {
     setExcuses({ ...excusesContent });
     setPhilosophy({ ...philosophyContent });
     setConsidering({ ...consideringContent });
+    setTestimonials({ ...testimonialsContent });
     setAbout({ ...aboutContent });
     setContact({ ...contactContent });
   }, []);
 
   return (
     <ContentProvider
-      value={{ landing, coaching, excuses, philosophy, considering, about, contact }}
+      value={{ landing, coaching, excuses, philosophy, considering, testimonials, about, contact }}
     >
       <Landing />
       <Coaching />
