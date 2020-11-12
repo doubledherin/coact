@@ -13,7 +13,7 @@
       text-align: center;
     }
     .image {
-      @include respond(phone) {
+      @include respond(tab-port) {
         height: 20vh;
         margin: 40px 0;
       }  

@@ -52,6 +52,32 @@ body .row .right {
   padding: 0 8%;
 }
 
+@media (max-width: 75em) {
+  body .row .left,
+  body .row .right {
+    padding: 0 7%;
+  }
+}
+
+@media (max-width: 56.25em) {
+  body .row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  body .row .top,
+  body .row .bottom {
+    display: block;
+  }
+  body .row .top {
+    height: 30vh;
+  }
+  body .row .top .prompt {
+    display: none;
+  }
+}
+
 body .prompt {
   position: absolute;
   bottom: 0;
@@ -476,7 +502,7 @@ a:hover {
   text-align: center;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 56.25em) {
   #coaching .left .image {
     height: 20vh;
     margin: 40px 0;

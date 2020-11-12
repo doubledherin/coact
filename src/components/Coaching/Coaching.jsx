@@ -13,7 +13,7 @@ const Coaching = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth > 769) {
+    if (window.innerWidth > 900) {
       setIsDesktop(true);
       setIsMobile(false);
     } else {
@@ -25,7 +25,7 @@ const Coaching = () => {
   return (
     <section id="coaching">
       <Row className="page">
-        <Col md={6} sm={12} className="left">
+        <Col md={6} sm={12} className="top left">
           <Fade bottom duration={1000} delay={600} distance="30px">
             <FluidImage
               className="image"
@@ -35,9 +35,9 @@ const Coaching = () => {
               filename={img}
             />
           </Fade>
-          <Prompt linkTo="excuses" text={cta} />
+          <Prompt desktop linkTo="excuses" text={cta} />
         </Col>
-        <Col md={6} sm={12} className="right">
+        <Col md={6} sm={12} className="bottom right">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <p>{paragraphOne}</p>
             <h3>
@@ -46,6 +46,7 @@ const Coaching = () => {
             <p>{paragraphTwo}</p>
             <p>{paragraphThree}</p>
           </Fade>
+          <Prompt mobile linkTo="excuses" text={cta} />
         </Col>
       </Row>
     </section>

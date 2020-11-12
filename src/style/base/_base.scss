@@ -19,6 +19,21 @@ body {
       justify-content: center;
       height: 100vh;
       padding: 0 8%;
+      @include respond(tab-land) {
+        padding: 0 7%;
+      }
+    }
+    @include respond(tab-port) {
+      flex-direction: row;
+      .top, .bottom {
+        display: block;
+      }
+      .top {
+        height: 30vh;
+        .prompt {
+          display: none;
+        }
+      }
     }
   }
 
