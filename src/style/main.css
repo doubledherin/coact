@@ -560,6 +560,85 @@ a:hover {
   padding-left: 3%;
 }
 
+#contact .left {
+  font-size: 1.9rem;
+}
+
+#contact .left .form-style-1 li {
+  display: block;
+  margin: 10px 0 0 0;
+}
+
+#contact .left .form-style-1 label {
+  display: block;
+}
+
+#contact .left .form-style-1 input[type='text'],
+#contact .left .form-style-1 input[type='date'],
+#contact .left .form-style-1 input[type='datetime'],
+#contact .left .form-style-1 input[type='number'],
+#contact .left .form-style-1 input[type='search'],
+#contact .left .form-style-1 input[type='time'],
+#contact .left .form-style-1 input[type='url'],
+#contact .left .form-style-1 input[type='email'],
+#contact .left textarea,
+#contact .left select {
+  background-color: #e7f5de;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border: none;
+  padding: 7px;
+  margin: 0px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+#contact .left .form-style-1 input[type='text']:focus,
+#contact .left .form-style-1 input[type='date']:focus,
+#contact .left .form-style-1 input[type='datetime']:focus,
+#contact .left .form-style-1 input[type='number']:focus,
+#contact .left .form-style-1 input[type='search']:focus,
+#contact .left .form-style-1 input[type='time']:focus,
+#contact .left .form-style-1 input[type='url']:focus,
+#contact .left .form-style-1 input[type='email']:focus,
+#contact .left .form-style-1 textarea:focus,
+#contact .left .form-style-1 select:focus {
+  -webkit-box-shadow: 0 0 8px #e7f5de;
+  box-shadow: 0 0 8px #e7f5de;
+  border: 1px solid #e7f5de;
+}
+
+#contact .left .form-style-1 .field {
+  width: 100%;
+}
+
+#contact .left .form-style-1 .field-textarea {
+  height: 100px;
+}
+
+#contact .left .form-style-1 input[type='submit'],
+#contact .left .form-style-1 input[type='button'] {
+  background: #e7f5de;
+  padding: 8px 15px 8px 15px;
+  border: none;
+  border-radius: 12px;
+  text-align: center;
+  width: 50%;
+  margin-top: 50px;
+}
+
+#contact .left .form-style-1 input[type='submit']:hover,
+#contact .left .form-style-1 input[type='button']:hover {
+  background: #c7e4fd;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
 #contact .right .credits {
   background-color: #e7f5de;
   height: 75vh;

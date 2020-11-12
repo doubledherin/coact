@@ -22,7 +22,33 @@ const Contact = () => {
   return (
     <section id="contact">
       <Row className="page">
-        <Col md={6} sm={12} className="left" />
+        <Col md={6} sm={12} className="left">
+          <form action="https://getform.io/f/93570157-3df3-448b-a0ca-e5bb3a58c8b1" method="POST">
+            <ul className="form-style-1">
+              <li>
+                <label htmlFor="name">
+                  Name <span className="required">*</span>
+                </label>
+                <input id="name" type="text" name="Name" className="field" />
+              </li>
+              <li>
+                <label htmlFor="email">
+                  Email <span className="required">*</span>
+                </label>
+                <input id="email" type="email" name="Email" className="field" />
+              </li>
+              <li>
+                <label htmlFor="message">
+                  Your Message <span className="required">*</span>
+                </label>
+                <textarea id="message" name="Message" className="field field-textarea" />
+              </li>
+              <li>
+                <input type="submit" value="Submit" />
+              </li>
+            </ul>
+          </form>
+        </Col>
         <Col md={6} sm={12} className="right">
           <div className="blank" />
           <div className="credits text">
