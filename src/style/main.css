@@ -74,7 +74,8 @@ body .prompt {
 
 @media (max-width: 56.25em) {
   body .prompt {
-    padding-top: 0;
+    width: 100vw;
+    padding-top: 40px;
     padding-left: 0;
   }
   body .prompt .prompt-text {
@@ -84,15 +85,9 @@ body .prompt {
 
 @media (max-width: 37.5em) {
   body .prompt {
+    padding-top: 30px;
     border-left: none;
     border-right: none;
-  }
-  body .prompt .prompt-text {
-    padding: 33px;
-    text-align: center;
-  }
-  body .prompt .prompt-text .skew {
-    font-size: 2.7rem;
   }
 }
 
@@ -351,20 +346,20 @@ a:hover {
 
 @media (max-width: 75em) {
   #landing #header .logo .company-name {
-    font-size: 4.1rem;
+    font-size: 5rem;
     letter-spacing: -0.1rem;
   }
 }
 
 @media (max-width: 56.25em) {
   #landing #header .logo .company-name {
-    font-size: 4rem;
     text-align: center;
   }
 }
 
 @media (max-width: 37.5em) {
   #landing #header .logo .company-name {
+    margin-top: 20px;
     line-height: 1;
   }
 }
@@ -446,8 +441,7 @@ a:hover {
 
 @media (max-width: 56.25em) {
   #landing #images .tagline {
-    font-size: 3.6rem;
-    padding-right: 0;
+    font-size: 2.6rem;
   }
 }
 

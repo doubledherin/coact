@@ -14,14 +14,14 @@
         margin-bottom: 0;
     
         @include respond(tab-land) {
-          font-size: 4.1rem;
+          font-size: 5rem;
           letter-spacing: -0.1rem;
         }
         @include respond(tab-port) {
-          font-size: 4rem;
           text-align: center;
         }
         @include respond(phone) {
+          margin-top: 20px;
           line-height: 1;
         }
       }
@@ -48,7 +48,7 @@
       width: 50vw;
       @include respond(tab-port) {
         width: 100vw;
-      }  
+      }
       @include respond(phone) {
         .text {
           padding: 35px;
@@ -84,8 +84,7 @@
         font-size: 3rem;
       }
       @include respond(tab-port) {
-        font-size: 3.6rem;
-        padding-right: 0;
+        font-size: 2.6rem;
       }
       @include respond(phone) {
         font-size: 2.5rem;
