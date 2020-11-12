@@ -14,24 +14,20 @@
         margin-bottom: 0;
     
         @include respond(tab-land) {
-          font-size: 3rem;
+          font-size: 4.1rem;
+          letter-spacing: -0.1rem;
         }
         @include respond(tab-port) {
           font-size: 4rem;
           text-align: center;
         }
         @include respond(phone) {
-          line-height: 1.5;
-        }
-        @include respond(phone-xs) {
-          font-size: 2.8rem;
+          line-height: 1;
         }
       }
       .tagline {
         font-size: 1.6rem;
-        @include respond(tab-land) {
-          font-size: 1.3rem;
-        }
+
         @include respond(tab-port) {
           text-align: center;
         }
@@ -55,8 +51,8 @@
       }  
       @include respond(phone) {
         .text {
-          padding: 10%;
-          text-align: left;
+          padding: 35px;
+          text-align: center;
           .skew {
             font-size: 122%;
           }
@@ -85,19 +81,16 @@
       padding-right: 14%;
   
       @include respond(tab-land) {
-        font-size: 4rem;
+        font-size: 3rem;
       }
       @include respond(tab-port) {
         font-size: 3.6rem;
-        text-align: center;
         padding-right: 0;
       }
       @include respond(phone) {
         font-size: 2.5rem;
         line-height: 1.5;
-      }
-      @include respond(phone-xs) {
-        font-size: 2.8rem;
+        margin-right: 20px;
       }
     }
     @include respond(phone) {

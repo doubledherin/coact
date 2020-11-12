@@ -28,19 +28,32 @@ body {
     right: 0;
     height: 15vh;
     width: 100%;
+    padding-top: 30px;
+    padding-left: 90px;
+    @include respond(tab-land) {
+      padding-top: 35px;
+      padding-left: 50px;
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
     @include respond(tab-port) {
-      width: 100vw;
-    }  
+      padding-top: 0;
+      padding-left: 0;
+      .prompt-text {
+        text-align: center;
+      }
+    }
     @include respond(phone) {
       border-left: none;
       border-right: none;
-      .text {
-          padding: 10%;
-          text-align: left;
-          .skew {
-            font-size: 122%;
-          }
+      .prompt-text {
+        padding: 33px;
+        text-align: center;
+        .skew {
+          font-size: 2.7rem;
         }
+      }
     }
   }
   .text {

@@ -9,7 +9,7 @@ const Prompt = (props) => {
     <Link to={linkTo} smooth duration={1000}>
       <Fade bottom duration={1000} delay={2000} distance="30px">
         <div className="prompt">
-          <div className="text">
+          <div className="prompt-text">
             <h1 className="skew">{text}</h1>
           </div>
         </div>

@@ -3,8 +3,7 @@
 0 - 600px:          Phone
 600px - 900px       Table Portrait
 900px - 1200px      Table Landscape
-[1200px - 1800px]   Desktop Normal Styles
-1800px +            Big Desktop
+1200px+             Desktop Normal Styles
 
 1em = 16px
 
@@ -59,11 +58,27 @@ body .prompt {
   right: 0;
   height: 15vh;
   width: 100%;
+  padding-top: 30px;
+  padding-left: 90px;
+}
+
+@media (max-width: 75em) {
+  body .prompt {
+    padding-top: 35px;
+    padding-left: 50px;
+  }
+  body .prompt h1 {
+    font-size: 2.5rem;
+  }
 }
 
 @media (max-width: 56.25em) {
   body .prompt {
-    width: 100vw;
+    padding-top: 0;
+    padding-left: 0;
+  }
+  body .prompt .prompt-text {
+    text-align: center;
   }
 }
 
@@ -72,12 +87,12 @@ body .prompt {
     border-left: none;
     border-right: none;
   }
-  body .prompt .text {
-    padding: 10%;
-    text-align: left;
+  body .prompt .prompt-text {
+    padding: 33px;
+    text-align: center;
   }
-  body .prompt .text .skew {
-    font-size: 122%;
+  body .prompt .prompt-text .skew {
+    font-size: 2.7rem;
   }
 }
 
@@ -336,7 +351,8 @@ a:hover {
 
 @media (max-width: 75em) {
   #landing #header .logo .company-name {
-    font-size: 3rem;
+    font-size: 4.1rem;
+    letter-spacing: -0.1rem;
   }
 }
 
@@ -349,24 +365,12 @@ a:hover {
 
 @media (max-width: 37.5em) {
   #landing #header .logo .company-name {
-    line-height: 1.5;
-  }
-}
-
-@media (max-width: 20em) {
-  #landing #header .logo .company-name {
-    font-size: 2.8rem;
+    line-height: 1;
   }
 }
 
 #landing #header .logo .tagline {
   font-size: 1.6rem;
-}
-
-@media (max-width: 75em) {
-  #landing #header .logo .tagline {
-    font-size: 1.3rem;
-  }
 }
 
 @media (max-width: 56.25em) {
@@ -399,8 +403,8 @@ a:hover {
 
 @media (max-width: 37.5em) {
   #landing #cta .prompt .text {
-    padding: 10%;
-    text-align: left;
+    padding: 35px;
+    text-align: center;
   }
   #landing #cta .prompt .text .skew {
     font-size: 122%;
@@ -436,14 +440,13 @@ a:hover {
 
 @media (max-width: 75em) {
   #landing #images .tagline {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 56.25em) {
   #landing #images .tagline {
     font-size: 3.6rem;
-    text-align: center;
     padding-right: 0;
   }
 }
@@ -452,12 +455,7 @@ a:hover {
   #landing #images .tagline {
     font-size: 2.5rem;
     line-height: 1.5;
-  }
-}
-
-@media (max-width: 20em) {
-  #landing #images .tagline {
-    font-size: 2.8rem;
+    margin-right: 20px;
   }
 }
 
