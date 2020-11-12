@@ -61,20 +61,19 @@ body .row .right {
 
 @media (max-width: 56.25em) {
   body .row {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-  }
-  body .row .top,
-  body .row .bottom {
     display: block;
   }
   body .row .top {
     height: 30vh;
+    max-width: 100%;
   }
   body .row .top .prompt {
     display: none;
+  }
+  body .row .bottom {
+    display: block;
+    height: 70vh;
+    max-width: 100%;
   }
 }
 
@@ -82,6 +81,7 @@ body .prompt {
   position: absolute;
   bottom: 0;
   right: 0;
+  left: 0;
   height: 15vh;
   width: 100%;
   padding-top: 30px;
@@ -513,12 +513,23 @@ a:hover {
   background-color: #e7f5de;
 }
 
+@media (max-width: 56.25em) {
+  #coaching .right {
+    padding: 70px 0;
+  }
+  #coaching .right h3,
+  #coaching .right p {
+    padding: 0 13%;
+  }
+  #coaching .right .prompt {
+    background-color: white;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 37.5em) {
   #coaching .right {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    padding: 6% 15%;
+    padding-top: 35px;
   }
   #coaching .right p {
     font-size: 1.6rem;

@@ -22,9 +22,18 @@
 
   .right {
     background-color: $coact-green;
+    @include respond(tab-port) {
+      padding: 70px 0;
+      h3, p {
+        padding: 0 13%;
+      }
+      .prompt {
+        background-color: white;
+        margin: 0 auto;
+      }
+    }
     @include respond(phone) {
-      justify-content: flex-start;
-      padding: 6% 15%;
+      padding-top: 35px;
       p {
         font-size: 1.6rem;
       }
