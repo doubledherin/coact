@@ -32,7 +32,7 @@
         @include respond(tab-land) {
           font-size: 1.3rem;
         }
-          @include respond(tab-port) {
+        @include respond(tab-port) {
           text-align: center;
         }
       }
@@ -50,6 +50,18 @@
     .prompt {
       background-color: $coact-green;
       width: 50vw;
+      @include respond(tab-port) {
+        width: 100vw;
+      }  
+      @include respond(phone) {
+        .text {
+          padding: 10%;
+          text-align: left;
+          .skew {
+            font-size: 122%;
+          }
+        }
+      }
     }
   }
 
@@ -62,6 +74,9 @@
       background-color: white;
       max-width: 100%;
       padding: 0;
+      @include respond(phone) {
+        padding-top: 200px;
+      }
     }
     .tagline {
       font-family: 'Sen', sans-serif;

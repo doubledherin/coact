@@ -57,26 +57,32 @@ body .prompt {
   position: absolute;
   bottom: 0;
   right: 0;
-  height: 20vh;
+  height: 15vh;
   width: 100%;
 }
 
 @media (max-width: 56.25em) {
   body .prompt {
     width: 100vw;
-    height: 40vh;
   }
 }
 
 @media (max-width: 37.5em) {
   body .prompt {
-    width: 100vw;
-    height: 20vh;
+    border-left: none;
+    border-right: none;
+  }
+  body .prompt .text {
+    padding: 10%;
+    text-align: left;
+  }
+  body .prompt .text .skew {
+    font-size: 122%;
   }
 }
 
 body .text {
-  padding: 50px 100px;
+  padding: 30px 100px;
 }
 
 @media (max-width: 56.25em) {
@@ -385,6 +391,22 @@ a:hover {
   width: 50vw;
 }
 
+@media (max-width: 56.25em) {
+  #landing #cta .prompt {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 37.5em) {
+  #landing #cta .prompt .text {
+    padding: 10%;
+    text-align: left;
+  }
+  #landing #cta .prompt .text .skew {
+    font-size: 122%;
+  }
+}
+
 #landing #images {
   padding-top: 150px;
 }
@@ -397,6 +419,12 @@ a:hover {
   background-color: white;
   max-width: 100%;
   padding: 0;
+}
+
+@media (max-width: 37.5em) {
+  #landing #images .jumbotron {
+    padding-top: 200px;
+  }
 }
 
 #landing #images .tagline {
@@ -443,6 +471,13 @@ a:hover {
   border-style: dotted;
   border-bottom: none;
   border-width: 1px;
+}
+
+@media (max-width: 37.5em) {
+  #coaching .left .prompt {
+    border-left: none;
+    border-right: none;
+  }
 }
 
 #coaching .left .text {

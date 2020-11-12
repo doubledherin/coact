@@ -4,6 +4,10 @@
       border-style: dotted;
       border-bottom: none;
       border-width: 1px;
+      @include respond(phone) {
+        border-left: none;
+        border-right: none;
+      }
     }
     .text {
       text-align: center;

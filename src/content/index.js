@@ -113,5 +113,5 @@ export const contactContent = {
   credit2a: 'Gatsby Simplefolio',
   credit2b: ' template developed by ',
   credit2c: 'Jacobo Martínez',
-  credit3: 'Illustrations \u00A92020 co-act.space',
+  credit3: 'Illustrations \u00A9 2020 co-act.space',
 };
