@@ -53,11 +53,8 @@ export const philosophyContent = {
     'A coaching process usually begins with an exploration of who you are, who you wish to be and what you want to create. Your fulfilling vision will serve as a your north star to navigate through. Crafting a roadmap will support you to follow up your experiment and practices.',
   paragraphThree:
     'Straightforward conversation with inquiries exposes what is underneath your struggles, reveals your (hidden) values and underlines what really matters to you. Improvisation, playfulness and light meditation open up exploration and go beyond your boundary. Brainstorming, actions learning and experimental practices help to develop new skills and behavior. ',
-  paragraphFour:
-    'You are most likely experiencing self-awareness, connection to your inner knowing, power of choice and appreciation. You will also be able to see through what is happening, aligning your life values and triggering pattern interruptions. This will create room for your resilience and authenticity to show up.',
   subheadOne: 'From self-discovery to envisioning',
   subheadTwo: 'Exploring and going beyond',
-  subheadThree: 'Experiencing',
 };
 
 export const consideringContent = {

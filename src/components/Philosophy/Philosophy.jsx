@@ -16,10 +16,8 @@ const Philosophy = () => {
     paragraphOne,
     paragraphTwo,
     paragraphThree,
-    paragraphFour,
     subheadOne,
     subheadTwo,
-    subheadThree,
   } = philosophy;
 
   const [isDesktop, setIsDesktop] = useState(false);
@@ -54,8 +52,6 @@ const Philosophy = () => {
             <p>{paragraphTwo}</p>
             <h3>{subheadTwo}</h3>
             <p>{paragraphThree}</p>
-            <h3>{subheadThree}</h3>
-            <p>{paragraphFour}</p>
           </Fade>
         </Col>
       </Row>
