@@ -35,7 +35,7 @@ const Coaching = () => {
               filename={img}
             />
           </Fade>
-          <Prompt desktop linkTo="excuses" text={cta} />
+          <Prompt linkTo="excuses" text={cta} />
         </Col>
         <Col md={6} sm={12} className="bottom right">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
@@ -46,7 +46,7 @@ const Coaching = () => {
             <p>{paragraphTwo}</p>
             <p>{paragraphThree}</p>
           </Fade>
-          <Prompt mobile linkTo="excuses" text={cta} />
+          <Prompt linkTo="excuses" text={cta} />
         </Col>
       </Row>
     </section>

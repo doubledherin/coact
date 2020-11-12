@@ -59,6 +59,10 @@ body .row .right {
   }
 }
 
+body .row .bottom .prompt {
+  display: none;
+}
+
 @media (max-width: 56.25em) {
   body .row {
     display: block;
@@ -74,6 +78,9 @@ body .row .right {
     display: block;
     height: 70vh;
     max-width: 100%;
+  }
+  body .row .bottom .prompt {
+    display: block;
   }
 }
 

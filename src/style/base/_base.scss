@@ -23,6 +23,11 @@ body {
         padding: 0 7%;
       }
     }
+    .bottom {
+      .prompt {
+        display: none;;
+      }
+    }
     @include respond(tab-port) {
       display: block;
       .top {
@@ -36,6 +41,9 @@ body {
         display: block;
         height: 70vh;
         max-width: 100%;
+        .prompt {
+          display: block;
+        }
       }
     }
   }
