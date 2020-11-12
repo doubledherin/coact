@@ -439,6 +439,12 @@ a:hover {
   }
 }
 
+#coaching .left .prompt {
+  border-style: dotted;
+  border-bottom: none;
+  border-width: 1px;
+}
+
 #coaching .left .text {
   text-align: center;
 }
@@ -477,6 +483,12 @@ a:hover {
   background-color: #c7e4fd;
 }
 
+#philosophy .left .prompt {
+  border-style: dotted;
+  border-bottom: none;
+  border-width: 1px;
+}
+
 #philosophy .left .prompt .text {
   text-align: center;
 }
@@ -511,15 +523,37 @@ a:hover {
 #testimonials .row .right .prompt {
   text-align: center;
   background-color: white;
+  border-style: dotted;
+  border-bottom: none;
+  border-width: 1px;
 }
 
 #about .left {
   padding-left: 15%;
 }
 
+#about .left .details {
+  padding-left: 50px;
+}
+
+#about .left .prompt {
+  text-align: center;
+  border-style: dotted;
+  border-bottom: none;
+  border-width: 1px;
+}
+
 #about .left .social {
   padding: 0;
   margin: 0;
+}
+
+#about .left .social:hover {
+  font-weight: 500;
+}
+
+#about .left a {
+  color: black;
 }
 
 #about .right {

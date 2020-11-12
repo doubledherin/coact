@@ -1,6 +1,13 @@
 #philosophy {
-  .left .prompt .text {
-    text-align: center;
+  .left {
+    .prompt {
+      border-style: dotted;
+      border-bottom: none;
+      border-width: 1px;
+      .text {
+        text-align: center;
+      }
+    }
   }
   .right {
     background-color: $coact-blue;

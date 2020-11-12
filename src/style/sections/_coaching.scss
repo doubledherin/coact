@@ -1,5 +1,10 @@
 #coaching {
   .left {
+    .prompt {
+      border-style: dotted;
+      border-bottom: none;
+      border-width: 1px;
+    }
     .text {
       text-align: center;
     }
