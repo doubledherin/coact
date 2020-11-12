@@ -560,6 +560,30 @@ a:hover {
   padding-left: 3%;
 }
 
+#contact .right .credits {
+  background-color: #e7f5de;
+  height: 75vh;
+  width: 50vw;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#contact .right .credits .credit {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  font-size: 1.8rem;
+}
+
+#contact .right .credits .credit a {
+  font-size: 1.8rem;
+  color: black;
+}
+
+#contact .right .credits .credit a:hover {
+  font-weight: 500;
+}
+
 .footer {
   background-color: white;
   color: black;

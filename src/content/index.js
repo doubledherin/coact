@@ -79,10 +79,12 @@ export const testimonialsContent = {
   text1:
     '"It is crazy and scary at the same time, how telling a \u2018small story\u2019 to Thelan ends up with you facing the hard questions of your life and making you having a conscious examination about your personality, your comfort zone and your formerly accepted boundaries. It is a tough path, but the reward is priceless."',
   attribution1: '\u2014John Doe',
+  cta: 'A PERSONAL JOURNEY',
 };
 
 export const aboutContent = {
   img: 'profile-drawing.png',
+  cta: 'GET IN TOUCH',
   alt: 'self-portrait of Thelan Nguyen',
   name: 'Thelan Nguyen',
   accreditation: 'ICF Accredited Coach\nwith Co-Active® Training Institute',
@@ -100,7 +102,16 @@ export const aboutContent = {
 };
 
 export const contactContent = {
-  cta: '',
-  btn: '',
-  email: '',
+  subheadOne: 'Imprint',
+  paragraphOne: 'Informationen gem. § 5 Telemediengesetz (TMG): contact @ co-act.space ',
+  subheadTwo: 'Haftungsausschluss',
+  paragraphTwo:
+    'Für die Richtigkeit, Aktualität und Vollständigkeit der zur Verfügung gestellten Inhalte und Informationen ist daher trotz sorgfältiger Prüfung der gemachten Angaben eine Haftung ausgeschlossen. Gleiches gilt für andere Webseiten, auf die mittels Hyperlink verwiesen wird. Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. ',
+  subheadThree: 'Credits',
+  credit1a: 'Site developed by ',
+  credit1b: 'Wendy Dherin',
+  credit2a: 'Gatsby Simplefolio',
+  credit2b: ' template developed by ',
+  credit2c: 'Jacobo Martínez',
+  credit3: 'Illustrations \u00A92020 co-act.space',
 };

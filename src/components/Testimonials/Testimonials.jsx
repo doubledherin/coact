@@ -8,7 +8,7 @@ import ContentContext from '../../contexts/content';
 
 const Testimonials = () => {
   const { testimonials } = useContext(ContentContext);
-  const { text1, attribution1, img } = testimonials;
+  const { cta, text1, attribution1, img } = testimonials;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -48,7 +48,7 @@ const Testimonials = () => {
               <p className="attribution">{attribution1}</p>
             </div>
           </Fade>
-          <Prompt linkTo="about" text="A PERSONAL JOURNEY" />
+          <Prompt linkTo="about" text={cta} />
         </Col>
       </Row>
     </section>

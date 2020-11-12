@@ -1,2 +1,24 @@
 #contact {
+  .right {
+    .credits {
+      background-color: $coact-green;
+      height: 75vh;
+      width: 50vw;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      .credit {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: 1.8rem;
+        a {
+          font-size: 1.8rem;
+          color: black;
+          &:hover {
+            font-weight: 500;
+          }
+        }
+      }
+    }  
+  }
 }

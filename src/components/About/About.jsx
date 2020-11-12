@@ -10,6 +10,7 @@ const About = () => {
   const { about } = useContext(ContentContext);
   const {
     alt,
+    cta,
     img,
     name,
     accreditation,
@@ -72,7 +73,7 @@ const About = () => {
               </p>
             </Fade>
           </div>
-          <Prompt linkTo="contact" text="GET IN TOUCH" />
+          <Prompt linkTo="contact" text={cta} />
         </Col>
         <Col md={6} sm={12} className="right">
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
